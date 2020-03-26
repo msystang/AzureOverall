@@ -3,5 +3,6 @@ Secrets.swift
 xcuserdata
 *.xcworkspace
 *.xcuserdata
+*.xcuserstate
 
 .DS_Store
