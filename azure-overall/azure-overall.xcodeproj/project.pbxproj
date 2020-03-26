@@ -16,7 +16,7 @@
 		EA5D6B56242D0D8100BEB9B2 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */; };
 		EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B59242D15CA00BEB9B2 /* CartViewController.swift */; };
 		EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B5B242D16DF00BEB9B2 /* DetailViewController.swift */; };
-		EA5D6B5E242D16F700BEB9B2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B5D242D16F700BEB9B2 /* TabBarViewController.swift */; };
+		EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		EA5D6B59242D15CA00BEB9B2 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		EA5D6B5B242D16DF00BEB9B2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		EA5D6B5D242D16F700BEB9B2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +116,36 @@
 		EA5D6B58242D151100BEB9B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EA5D6B31242CF6C200BEB9B2 /* BrowseViewController.swift */,
-				EA5D6B59242D15CA00BEB9B2 /* CartViewController.swift */,
-				EA5D6B5B242D16DF00BEB9B2 /* DetailViewController.swift */,
-				EA5D6B5D242D16F700BEB9B2 /* TabBarViewController.swift */,
+				EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */,
+				EA5D6B5F242D20E400BEB9B2 /* Browse */,
+				EA5D6B60242D20F200BEB9B2 /* Cart */,
+				EA5D6B61242D20F800BEB9B2 /* Detail */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA5D6B5F242D20E400BEB9B2 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B31242CF6C200BEB9B2 /* BrowseViewController.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		EA5D6B60242D20F200BEB9B2 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B59242D15CA00BEB9B2 /* CartViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		EA5D6B61242D20F800BEB9B2 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B5B242D16DF00BEB9B2 /* DetailViewController.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +252,7 @@
 				EA5D6B56242D0D8100BEB9B2 /* Secrets.swift in Sources */,
 				EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */,
 				EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */,
-				EA5D6B5E242D16F700BEB9B2 /* TabBarViewController.swift in Sources */,
+				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
 				EA5D6B2E242CF6C200BEB9B2 /* AppDelegate.swift in Sources */,
 				EA5D6B30242CF6C200BEB9B2 /* SceneDelegate.swift in Sources */,
 			);
