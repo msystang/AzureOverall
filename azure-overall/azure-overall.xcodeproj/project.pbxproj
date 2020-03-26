@@ -199,10 +199,18 @@
 		EA5D6B72242D3F1900BEB9B2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EA5D6B7E242D570D00BEB9B2 /* RecipeCollectionViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA5D6B7E242D570D00BEB9B2 /* RecipeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
 				EA5D6B74242D402000BEB9B2 /* RecipeCollectionViewCell.swift */,
 				EA5D6B78242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift */,
 			);
-			path = Views;
+			path = RecipeCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
