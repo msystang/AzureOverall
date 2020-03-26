@@ -18,9 +18,10 @@ class BrowseViewController: UIViewController {
     }()
     
     lazy var recipeCollectionView: UICollectionView = {
-        let collectionView = UICollectionView()
+        let collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.backgroundColor = .orange
         return collectionView
     }()
     
