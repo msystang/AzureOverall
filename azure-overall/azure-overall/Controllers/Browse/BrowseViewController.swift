@@ -17,6 +17,12 @@ class BrowseViewController: UIViewController {
         return searchBar
     }()
     
+    lazy var recipeCollectionView: UICollectionView = {
+        let collectionView = UICollectionView()
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        return collectionView
+    }()
     
     var searchString: String? = nil
     
