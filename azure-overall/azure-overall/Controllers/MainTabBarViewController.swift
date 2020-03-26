@@ -19,14 +19,20 @@ class MainTabBarViewController: UITabBarController {
         return cartNavVC
     }()
     
+    let profileVC: UIViewController = {
+        let profileVC = ProfileViewController()
+        return profileVC
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         browseVC.tabBarItem = UITabBarItem(title: "Browse", image: UIImage(systemName: "magnifyingglass.circle"), tag: 0)
-        cartVC.tabBarItem = UITabBarItem(title: "My Cart", image: UIImage(systemName:"cart"), tag: 0)
+        cartVC.tabBarItem = UITabBarItem(title: "My Cart", image: UIImage(systemName:"cart"), tag: 1)
+        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName:"person"), tag: 2)
         
-        self.viewControllers = [browseVC, cartVC]
+        self.viewControllers = [browseVC, cartVC, profileVC]
     }
     
 }
