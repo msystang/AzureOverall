@@ -20,7 +20,7 @@ extension BrowseViewController: UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchString = searchBar.text
+        searchString = searchBar.text ?? ""
         searchBar.resignFirstResponder()
     }
     
