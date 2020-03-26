@@ -6,4 +6,20 @@
 //  Copyright © 2020 Sunni Tang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension CartViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 7
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    
+}
+
+extension CartViewController: UITableViewDelegate {
+    
+}
