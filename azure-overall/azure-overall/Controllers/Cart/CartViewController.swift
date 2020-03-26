@@ -15,6 +15,7 @@ class CartViewController: UIViewController {
         tableView.backgroundColor = .blue
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.register(RecipeTableViewCell.self, forCellReuseIdentifier: CellIdentifiers.recipeTableViewCell.rawValue)
         return tableView
     }()
     
