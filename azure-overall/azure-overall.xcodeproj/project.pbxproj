@@ -23,6 +23,8 @@
 		EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */; };
 		EA5D6B6D242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6C242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift */; };
 		EA5D6B6F242D367D00BEB9B2 /* BrowseViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6E242D367D00BEB9B2 /* BrowseViewController+Constraints.swift */; };
+		EA5D6B75242D402000BEB9B2 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B74242D402000BEB9B2 /* RecipeCollectionViewCell.swift */; };
+		EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B76242D404600BEB9B2 /* CellIdentifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+SearchBar.swift"; sourceTree = "<group>"; };
 		EA5D6B6C242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		EA5D6B6E242D367D00BEB9B2 /* BrowseViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+Constraints.swift"; sourceTree = "<group>"; };
+		EA5D6B74242D402000BEB9B2 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA5D6B76242D404600BEB9B2 /* CellIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B58242D151100BEB9B2 /* Controllers */,
+				EA5D6B72242D3F1900BEB9B2 /* Views */,
 				EA5D6B57242D137800BEB9B2 /* App Lifecycle */,
 				EA5D6B36242CF6C500BEB9B2 /* Assets.xcassets */,
 				EA5D6B3B242CF6C500BEB9B2 /* Info.plist */,
 				EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */,
+				EA5D6B76242D404600BEB9B2 /* CellIdentifiers.swift */,
 			);
 			path = "azure-overall";
 			sourceTree = "<group>";
@@ -180,6 +186,14 @@
 				EA5D6B67242D2CB700BEB9B2 /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		EA5D6B72242D3F1900BEB9B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B74242D402000BEB9B2 /* RecipeCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,10 +300,12 @@
 				EA5D6B56242D0D8100BEB9B2 /* Secrets.swift in Sources */,
 				EA5D6B68242D2CB700BEB9B2 /* ProfileViewController.swift in Sources */,
 				EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */,
+				EA5D6B75242D402000BEB9B2 /* RecipeCollectionViewCell.swift in Sources */,
 				EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */,
 				EA5D6B6F242D367D00BEB9B2 /* BrowseViewController+Constraints.swift in Sources */,
 				EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */,
 				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
+				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
 				EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */,
 				EA5D6B66242D2C7500BEB9B2 /* SignUpViewController.swift in Sources */,
 				EA5D6B2E242CF6C200BEB9B2 /* AppDelegate.swift in Sources */,
