@@ -20,6 +20,7 @@
 		EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */; };
 		EA5D6B66242D2C7500BEB9B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B65242D2C7500BEB9B2 /* SignUpViewController.swift */; };
 		EA5D6B68242D2CB700BEB9B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B67242D2CB700BEB9B2 /* ProfileViewController.swift */; };
+		EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		EA5D6B65242D2C7500BEB9B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EA5D6B67242D2CB700BEB9B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+SearchBar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B31242CF6C200BEB9B2 /* BrowseViewController.swift */,
+				EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */,
 				EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */,
 				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
+				EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */,
 				EA5D6B66242D2C7500BEB9B2 /* SignUpViewController.swift in Sources */,
 				EA5D6B2E242CF6C200BEB9B2 /* AppDelegate.swift in Sources */,
 				EA5D6B30242CF6C200BEB9B2 /* SceneDelegate.swift in Sources */,
