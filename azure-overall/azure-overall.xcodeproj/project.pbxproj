@@ -28,6 +28,7 @@
 		EA5D6B79242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B78242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift */; };
 		EA5D6B7B242D536100BEB9B2 /* CartViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B7A242D536100BEB9B2 /* CartViewController+TableView.swift */; };
 		EA5D6B7D242D552100BEB9B2 /* CartViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B7C242D552100BEB9B2 /* CartViewController+Constraints.swift */; };
+		EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B82242D578200BEB9B2 /* RecipeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		EA5D6B78242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeCollectionViewCell+Constraints.swift"; sourceTree = "<group>"; };
 		EA5D6B7A242D536100BEB9B2 /* CartViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartViewController+TableView.swift"; sourceTree = "<group>"; };
 		EA5D6B7C242D552100BEB9B2 /* CartViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartViewController+Constraints.swift"; sourceTree = "<group>"; };
+		EA5D6B82242D578200BEB9B2 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B7E242D570D00BEB9B2 /* RecipeCollectionViewCell */,
+				EA5D6B7F242D573800BEB9B2 /* RecipeTableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +214,14 @@
 				EA5D6B78242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift */,
 			);
 			path = RecipeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		EA5D6B7F242D573800BEB9B2 /* RecipeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B82242D578200BEB9B2 /* RecipeTableViewCell.swift */,
+			);
+			path = RecipeTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +337,7 @@
 				EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */,
 				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
+				EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */,
 				EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */,
 				EA5D6B66242D2C7500BEB9B2 /* SignUpViewController.swift in Sources */,
 				EA5D6B2E242CF6C200BEB9B2 /* AppDelegate.swift in Sources */,
