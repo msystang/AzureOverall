@@ -29,6 +29,7 @@
 		EA5D6B7B242D536100BEB9B2 /* CartViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B7A242D536100BEB9B2 /* CartViewController+TableView.swift */; };
 		EA5D6B7D242D552100BEB9B2 /* CartViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B7C242D552100BEB9B2 /* CartViewController+Constraints.swift */; };
 		EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B82242D578200BEB9B2 /* RecipeTableViewCell.swift */; };
+		EA5D6B85242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B84242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		EA5D6B7A242D536100BEB9B2 /* CartViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartViewController+TableView.swift"; sourceTree = "<group>"; };
 		EA5D6B7C242D552100BEB9B2 /* CartViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartViewController+Constraints.swift"; sourceTree = "<group>"; };
 		EA5D6B82242D578200BEB9B2 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		EA5D6B84242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeTableViewCell+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B82242D578200BEB9B2 /* RecipeTableViewCell.swift */,
+				EA5D6B84242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift */,
 			);
 			path = RecipeTableViewCell;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				EA5D6B6F242D367D00BEB9B2 /* BrowseViewController+Constraints.swift in Sources */,
 				EA5D6B79242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift in Sources */,
 				EA5D6B7D242D552100BEB9B2 /* CartViewController+Constraints.swift in Sources */,
+				EA5D6B85242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift in Sources */,
 				EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */,
 				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
