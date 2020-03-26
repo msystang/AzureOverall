@@ -35,4 +35,13 @@ extension BrowseViewController: UICollectionViewDelegateFlowLayout {
 
             return CGSize(width: ((self.view.frame.width / 2) - 15), height:((self.view.frame.width / 2) - 15));
         }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        let recipe = collectionView.cellForItem(at: indexPath)
+        
+        let detailVC = DetailViewController()
+        
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
