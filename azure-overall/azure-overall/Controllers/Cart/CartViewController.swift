@@ -12,6 +12,7 @@ class CartViewController: UIViewController {
 
     lazy var recipeTableView: UITableView = {
         let tableView = UITableView()
+        tableView.backgroundColor = .blue
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
