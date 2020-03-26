@@ -10,6 +10,13 @@ import UIKit
 
 class CartViewController: UIViewController {
 
+    lazy var recipeTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.dataSource = self
+        tableView.delegate = self
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
