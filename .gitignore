@@ -1,0 +1,7 @@
+Secrets.swift
+
+xcuserdata
+*.xcworkspace
+*.xcuserdata
+
+.DS_Store
