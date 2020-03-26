@@ -23,8 +23,8 @@ class MainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        browseVC.tabBarItem = UITabBarItem(title: "Browse", image: UIImage(systemName: "magnifying-glass"), tag: 0)
-        cartVC.tabBarItem = UITabBarItem(title: "Cart", image: UIImage(systemName:"car"), tag: 0)
+        browseVC.tabBarItem = UITabBarItem(title: "Browse", image: UIImage(systemName: "magnifyingglass.circle"), tag: 0)
+        cartVC.tabBarItem = UITabBarItem(title: "My Cart", image: UIImage(systemName:"cart"), tag: 0)
         
         self.viewControllers = [browseVC, cartVC]
     }
