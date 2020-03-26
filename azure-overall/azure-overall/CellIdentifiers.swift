@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+enum CellIdentifiers: String {
+    case recipeCollectionViewCell
+    case recipeTableViewCell
+}
