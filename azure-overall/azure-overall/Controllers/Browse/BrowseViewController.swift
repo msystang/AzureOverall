@@ -12,9 +12,13 @@ class BrowseViewController: UIViewController {
 
     lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
+        searchBar.searchBarStyle = .minimal
         searchBar.delegate = self
         return searchBar
     }()
+    
+    
+    var searchString: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
