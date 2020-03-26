@@ -10,6 +10,12 @@ import UIKit
 
 class BrowseViewController: UIViewController {
 
+    lazy var searchBar: UISearchBar = {
+        let searchBar = UISearchBar()
+        searchBar.delegate = self
+        return searchBar
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
