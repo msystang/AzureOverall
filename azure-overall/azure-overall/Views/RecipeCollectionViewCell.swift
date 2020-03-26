@@ -9,9 +9,32 @@
 import UIKit
 
 class RecipeCollectionViewCell: UICollectionViewCell {
+    var recipeImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .cyan
+        return imageView
+    }()
+    
+    var recipeTitleLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.text = "Title"
+        return label
+    }()
+    
+    var recipeInfoLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.text = "Info"
+        return label
+    }()
+    
+    
     //MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
+        addSubviews()
+        addConstraints()
     }
     
     required init?(coder: NSCoder) {
