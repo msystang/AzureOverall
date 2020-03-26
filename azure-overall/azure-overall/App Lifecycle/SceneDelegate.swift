@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Assigns the app's windowScene to the window on the device
         window?.windowScene = windowScene
         // Assigns the rootViewController
-        window?.rootViewController = ViewController()
+        window?.rootViewController = BrowseViewController()
         
         // Shows the current window
         window?.makeKeyAndVisible()
