@@ -79,11 +79,9 @@
 		EA5D6B2C242CF6C200BEB9B2 /* azure-overall */ = {
 			isa = PBXGroup;
 			children = (
-				EA5D6B2D242CF6C200BEB9B2 /* AppDelegate.swift */,
-				EA5D6B2F242CF6C200BEB9B2 /* SceneDelegate.swift */,
 				EA5D6B31242CF6C200BEB9B2 /* ViewController.swift */,
+				EA5D6B57242D137800BEB9B2 /* App Lifecycle */,
 				EA5D6B36242CF6C500BEB9B2 /* Assets.xcassets */,
-				EA5D6B38242CF6C500BEB9B2 /* LaunchScreen.storyboard */,
 				EA5D6B3B242CF6C500BEB9B2 /* Info.plist */,
 				EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */,
 			);
@@ -97,6 +95,16 @@
 				EA5D6B46242CF6C500BEB9B2 /* Info.plist */,
 			);
 			path = "azure-overallTests";
+			sourceTree = "<group>";
+		};
+		EA5D6B57242D137800BEB9B2 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B2D242CF6C200BEB9B2 /* AppDelegate.swift */,
+				EA5D6B2F242CF6C200BEB9B2 /* SceneDelegate.swift */,
+				EA5D6B38242CF6C500BEB9B2 /* LaunchScreen.storyboard */,
+			);
+			path = "App Lifecycle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
