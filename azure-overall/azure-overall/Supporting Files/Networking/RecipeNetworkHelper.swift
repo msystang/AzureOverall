@@ -25,15 +25,17 @@ class RecipeNetworkHelper {
         }
         
         NetworkManager.manager.getDataFromDataTask(from: url, with: .get) { (result) in
-            switch result {
-            case .failure(let error):
-                completion(.failure(error))
-            case .success(let data):
-                do {
-                    let recipes = try Recipe.decodeFromData(from: data)
-                    completion(.success(recipes))
-                } catch {
-                    completion(.failure(.couldNotParseJSON(rawError: error)))
+            DispatchQueue.main.async {
+                switch result {
+                case .failure(let error):
+                    completion(.failure(error))
+                case .success(let data):
+                    do {
+                        let recipes = try Recipe.decodeFromData(from: data)
+                        completion(.success(recipes))
+                    } catch {
+                        completion(.failure(.couldNotParseJSON(rawError: error)))
+                    }
                 }
             }
         }

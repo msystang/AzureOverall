@@ -59,18 +59,18 @@ class BrowseViewController: UIViewController {
     }
     
     // MARK: - Objc Methods
-//    @objc func settingsButtonPressed() {
-//
-//    }
-
+    //    @objc func settingsButtonPressed() {
+    //
+    //    }
+    
     // MARK: - Internal Methods
     private func loadRecipes() {
         // TODO: Update searchCount
         let urlStr = RecipeNetworkHelper.getUrlStr(from: searchString ?? "", searchCount: 7)
         
-        // Dispatches data task asynchronously on the main thread
-        DispatchQueue.main.async {
-            RecipeNetworkHelper.manager.getRecipes(from: urlStr) { (result) in
+        RecipeNetworkHelper.manager.getRecipes(from: urlStr) { (result) in
+            // Dispatches data task asynchronously on the main thread
+            DispatchQueue.main.async {
                 switch result {
                 case .failure(let error):
                     // TODO: Handle error, create alerts
