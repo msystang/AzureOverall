@@ -22,8 +22,12 @@ struct Recipe: Codable {
     
     // MARK: - Internal Methods
     static func decodeFromData(from jsonData: Data) throws -> [Recipe] {
-        let decodeResponse = try JSONDecoder().decode([Recipe].self, from: jsonData)
-        return decodeResponse
+        let decodeResponse = try JSONDecoder().decode(RecipeWrapper.self, from: jsonData)
+        return decodeResponse.results
     }
     
+}
+
+struct RecipeWrapper: Codable {
+    let results: [Recipe]
 }
