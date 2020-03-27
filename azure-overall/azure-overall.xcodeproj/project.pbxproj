@@ -32,7 +32,7 @@
 		EA5D6B85242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B84242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift */; };
 		EA5D6B88242E553B00BEB9B2 /* SystemImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B87242E553B00BEB9B2 /* SystemImages.swift */; };
 		EA5D6B8C242E6BA100BEB9B2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B8B242E6BA100BEB9B2 /* NetworkManager.swift */; };
-		EA5D6B8F242E6BFA00BEB9B2 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B8E242E6BFA00BEB9B2 /* AppError.swift */; };
+		EA5D6B8F242E6BFA00BEB9B2 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */; };
 		EA5D6B91242E6FE900BEB9B2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +76,7 @@
 		EA5D6B84242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeTableViewCell+Constraints.swift"; sourceTree = "<group>"; };
 		EA5D6B87242E553B00BEB9B2 /* SystemImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImages.swift; sourceTree = "<group>"; };
 		EA5D6B8B242E6BA100BEB9B2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		EA5D6B8E242E6BFA00BEB9B2 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -236,7 +236,7 @@
 		EA5D6B86242E552200BEB9B2 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				EA5D6B8E242E6BFA00BEB9B2 /* AppError.swift */,
+				EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */,
 				EA5D6B76242D404600BEB9B2 /* CellIdentifiers.swift */,
 				EA5D6B87242E553B00BEB9B2 /* SystemImages.swift */,
 				EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */,
@@ -384,7 +384,7 @@
 				EA5D6B79242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift in Sources */,
 				EA5D6B7D242D552100BEB9B2 /* CartViewController+Constraints.swift in Sources */,
 				EA5D6B85242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift in Sources */,
-				EA5D6B8F242E6BFA00BEB9B2 /* AppError.swift in Sources */,
+				EA5D6B8F242E6BFA00BEB9B2 /* Errors.swift in Sources */,
 				EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */,
 				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
