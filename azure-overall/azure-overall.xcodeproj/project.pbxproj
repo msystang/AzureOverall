@@ -54,7 +54,7 @@
 		EA5D6B40242CF6C500BEB9B2 /* azure-overallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "azure-overallTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5D6B44242CF6C500BEB9B2 /* azure_overallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = azure_overallTests.swift; sourceTree = "<group>"; };
 		EA5D6B46242CF6C500BEB9B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Secrets.swift; path = ../Secrets.swift; sourceTree = "<group>"; };
 		EA5D6B59242D15CA00BEB9B2 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		EA5D6B5B242D16DF00BEB9B2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -113,13 +113,11 @@
 		EA5D6B2C242CF6C200BEB9B2 /* azure-overall */ = {
 			isa = PBXGroup;
 			children = (
+				EA5D6B57242D137800BEB9B2 /* App Lifecycle */,
 				EA5D6B58242D151100BEB9B2 /* Controllers */,
 				EA5D6B72242D3F1900BEB9B2 /* Views */,
-				EA5D6B57242D137800BEB9B2 /* App Lifecycle */,
-				EA5D6B86242E552200BEB9B2 /* Enums */,
-				EA5D6B36242CF6C500BEB9B2 /* Assets.xcassets */,
+				EA5D6B8A242E600700BEB9B2 /* Supporting Files */,
 				EA5D6B3B242CF6C500BEB9B2 /* Info.plist */,
-				EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */,
 			);
 			path = "azure-overall";
 			sourceTree = "<group>";
@@ -244,6 +242,16 @@
 				EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		EA5D6B8A242E600700BEB9B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B86242E552200BEB9B2 /* Enums */,
+				EA5D6B36242CF6C500BEB9B2 /* Assets.xcassets */,
+				EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

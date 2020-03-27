@@ -27,7 +27,7 @@ class BrowseViewController: UIViewController {
         return collectionView
     }()
     
-    // TODO: Detetmine where to put Settings
+    // TODO: Detetmine where to put Settings, change to menu?
 //    lazy var settingsButton: UIBarButtonItem = {
 //        let button = UIBarButtonItem(image: UIImage(systemName: SystemImages.gear.rawValue), style: .plain, target: self, action: #selector(settingsButtonPressed))
 //        return button
