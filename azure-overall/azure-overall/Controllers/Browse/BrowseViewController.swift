@@ -27,10 +27,11 @@ class BrowseViewController: UIViewController {
         return collectionView
     }()
     
-    lazy var settingsButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(image: UIImage(systemName: SystemImages.gear.rawValue), style: .plain, target: self, action: #selector(settingsButtonPressed))
-        return button
-    }()
+    // TODO: Detetmine where to put Settings
+//    lazy var settingsButton: UIBarButtonItem = {
+//        let button = UIBarButtonItem(image: UIImage(systemName: SystemImages.gear.rawValue), style: .plain, target: self, action: #selector(settingsButtonPressed))
+//        return button
+//    }()
     
     // MARK: - Internal Properties
     var searchString: String? = nil
@@ -46,9 +47,9 @@ class BrowseViewController: UIViewController {
     }
     
     // MARK: - Objc Methods
-    @objc func settingsButtonPressed() {
-        
-    }
+//    @objc func settingsButtonPressed() {
+//
+//    }
 
 
 }

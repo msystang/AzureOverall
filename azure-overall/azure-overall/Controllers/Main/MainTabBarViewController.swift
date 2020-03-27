@@ -21,9 +21,9 @@ class MainTabBarViewController: UITabBarController {
         return cartNavVC
     }()
     
-    let profileVC: UIViewController = {
-        let profileVC = ProfileViewController()
-        return profileVC
+    let settingsVC: UIViewController = {
+        let settingsVC = SettingsViewController()
+        return settingsVC
     }()
     
     // MARK: - Lifecycle Functions
@@ -32,9 +32,9 @@ class MainTabBarViewController: UITabBarController {
 
         browseVC.tabBarItem = UITabBarItem(title: "Browse", image: UIImage(systemName: SystemImages.magnifyingGlass.rawValue), tag: 0)
         cartVC.tabBarItem = UITabBarItem(title: "My Cart", image: UIImage(systemName:SystemImages.cart.rawValue), tag: 1)
-        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName:SystemImages.person.rawValue), tag: 2)
+        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName:SystemImages.gear.rawValue), tag: 2)
         
-        self.viewControllers = [browseVC, cartVC, profileVC]
+        self.viewControllers = [browseVC, cartVC, settingsVC]
     }
     
 }

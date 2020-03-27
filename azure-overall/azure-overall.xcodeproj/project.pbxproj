@@ -19,7 +19,7 @@
 		EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */; };
 		EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */; };
 		EA5D6B66242D2C7500BEB9B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B65242D2C7500BEB9B2 /* SignUpViewController.swift */; };
-		EA5D6B68242D2CB700BEB9B2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B67242D2CB700BEB9B2 /* ProfileViewController.swift */; };
+		EA5D6B68242D2CB700BEB9B2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B67242D2CB700BEB9B2 /* SettingsViewController.swift */; };
 		EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */; };
 		EA5D6B6D242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6C242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift */; };
 		EA5D6B6F242D367D00BEB9B2 /* BrowseViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6E242D367D00BEB9B2 /* BrowseViewController+Constraints.swift */; };
@@ -60,7 +60,7 @@
 		EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		EA5D6B65242D2C7500BEB9B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		EA5D6B67242D2CB700BEB9B2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EA5D6B67242D2CB700BEB9B2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+SearchBar.swift"; sourceTree = "<group>"; };
 		EA5D6B6C242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		EA5D6B6E242D367D00BEB9B2 /* BrowseViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+Constraints.swift"; sourceTree = "<group>"; };
@@ -147,11 +147,11 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B62242D2C5600BEB9B2 /* Authentication */,
-				EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */,
+				EA5D6B89242E5B5200BEB9B2 /* Main */,
 				EA5D6B5F242D20E400BEB9B2 /* Browse */,
 				EA5D6B60242D20F200BEB9B2 /* Cart */,
 				EA5D6B61242D20F800BEB9B2 /* Detail */,
-				EA5D6B69242D2CBB00BEB9B2 /* Profile */,
+				EA5D6B69242D2CBB00BEB9B2 /* Settings */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,12 +194,12 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		EA5D6B69242D2CBB00BEB9B2 /* Profile */ = {
+		EA5D6B69242D2CBB00BEB9B2 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				EA5D6B67242D2CB700BEB9B2 /* ProfileViewController.swift */,
+				EA5D6B67242D2CB700BEB9B2 /* SettingsViewController.swift */,
 			);
-			path = Profile;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		EA5D6B72242D3F1900BEB9B2 /* Views */ = {
@@ -236,6 +236,14 @@
 				EA5D6B87242E553B00BEB9B2 /* SystemImages.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		EA5D6B89242E5B5200BEB9B2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,7 +348,7 @@
 			files = (
 				EA5D6B32242CF6C200BEB9B2 /* BrowseViewController.swift in Sources */,
 				EA5D6B56242D0D8100BEB9B2 /* Secrets.swift in Sources */,
-				EA5D6B68242D2CB700BEB9B2 /* ProfileViewController.swift in Sources */,
+				EA5D6B68242D2CB700BEB9B2 /* SettingsViewController.swift in Sources */,
 				EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */,
 				EA5D6B75242D402000BEB9B2 /* RecipeCollectionViewCell.swift in Sources */,
 				EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */,
