@@ -36,10 +36,10 @@ extension RecipeTableViewCell {
         recipeTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            recipeTitleLabel.topAnchor.constraint(equalTo: self.topAnchor),
+            recipeTitleLabel.topAnchor.constraint(equalTo: recipeImageView.topAnchor),
             recipeTitleLabel.leftAnchor.constraint(equalTo: recipeImageView.rightAnchor, constant: 5),
-            recipeTitleLabel.rightAnchor.constraint(equalTo: self.rightAnchor),
-            recipeTitleLabel.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.6)
+            recipeTitleLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 10),
+            recipeTitleLabel.heightAnchor.constraint(equalTo: recipeImageView.heightAnchor, multiplier: 0.6)
         ])
     }
     
