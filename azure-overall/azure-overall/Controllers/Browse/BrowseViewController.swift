@@ -34,7 +34,19 @@ class BrowseViewController: UIViewController {
 //    }()
     
     // MARK: - Internal Properties
-    var searchString: String? = nil
+    var searchString: String? = nil {
+        didSet {
+            loadRecipes()
+        }
+    }
+    
+    var searchCount: Int = 20
+    
+    var recipes = [Recipe]() {
+        didSet {
+            print("Got recipes")
+        }
+    }
     
     
     // MARK: - Lifecycle Functions
