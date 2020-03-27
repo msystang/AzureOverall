@@ -14,7 +14,7 @@ class NetworkManager {
     static let manager = NetworkManager()
     
     // MARK: - Instance Methods
-    func getDataFromDataTask(from url: URL, with hTTPMethod: HTTPMethod, and hTTPBody: Data? = nil, completion: @escaping (Result<Data,AppError>) -> ()) {
+    func getDataFromDataTask(from url: URL, with hTTPMethod: HTTPMethod, and hTTPBody: Data? = nil, completion: @escaping (Result<Data,NetworkingError>) -> ()) {
         
         // Create an instance of URL request with given url
         var urlRequest = URLRequest(url: url)
@@ -31,13 +31,13 @@ class NetworkManager {
                 
                 // guard that we received data
                 guard let data = data else {
-                    completion(.failure(.networkingNoDataReceived))
+                    completion(.failure(.noDataReceived))
                     return
                 }
                 
                 // guard that we get a response within 200 success codes by using static func ~= to indicate bool for stated closed range
                 guard let response = response as? HTTPURLResponse, (200...299) ~= response.statusCode else {
-                    completion(.failure(.networkingBadStatusCode))
+                    completion(.failure(.badStatusCode))
                     return
                 }
                 
@@ -45,7 +45,7 @@ class NetworkManager {
                 if let error = error {
                     let error = error as NSError
                     if error.domain == NSURLErrorDomain && error.code == NSURLErrorNotConnectedToInternet {
-                        completion(.failure(.networkingNoInternetConnection))
+                        completion(.failure(.noInternetConnection))
                         return
                     } else {
                         completion(.failure(.other(rawError: error)))

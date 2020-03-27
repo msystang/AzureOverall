@@ -9,8 +9,12 @@
 import Foundation
 
 enum AppError: Error {
-    case networkingNoDataReceived
-    case networkingBadStatusCode
-    case networkingNoInternetConnection
+    
+}
+
+enum NetworkingError: Error {
+    case noDataReceived
+    case badStatusCode
+    case noInternetConnection
     case other(rawError: Error)
 }
