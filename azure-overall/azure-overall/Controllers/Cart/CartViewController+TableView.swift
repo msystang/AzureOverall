@@ -28,7 +28,10 @@ extension CartViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let recipe = recipes[indexPath.row]
+        
         let detailVC = DetailViewController()
+        detailVC.recipe = recipe
         
         self.navigationController?.pushViewController(detailVC, animated: true)
         

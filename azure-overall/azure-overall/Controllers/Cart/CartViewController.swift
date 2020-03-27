@@ -20,6 +20,8 @@ class CartViewController: UIViewController {
         return tableView
     }()
     
+    var recipes = [Recipe]()
+    
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
