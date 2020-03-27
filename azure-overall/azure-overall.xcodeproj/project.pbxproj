@@ -35,6 +35,7 @@
 		EA5D6B8F242E6BFA00BEB9B2 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */; };
 		EA5D6B91242E6FE900BEB9B2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */; };
 		EA5D6B93242E78A600BEB9B2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B92242E78A600BEB9B2 /* Recipe.swift */; };
+		EA5D6B96242E7C0600BEB9B2 /* RecipeNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B95242E7C0600BEB9B2 /* RecipeNetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		EA5D6B92242E78A600BEB9B2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		EA5D6B95242E7C0600BEB9B2 /* RecipeNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B8B242E6BA100BEB9B2 /* NetworkManager.swift */,
+				EA5D6B95242E7C0600BEB9B2 /* RecipeNetworkHelper.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				EA5D6B8F242E6BFA00BEB9B2 /* Errors.swift in Sources */,
 				EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */,
 				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
+				EA5D6B96242E7C0600BEB9B2 /* RecipeNetworkHelper.swift in Sources */,
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
 				EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */,
 				EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */,
