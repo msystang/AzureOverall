@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+enum AppError: Error {
+    case networkingNoDataReceived
+    case networkingBadStatusCode
+    case networkingNoInternetConnection
+    case other(rawError: Error)
+}
