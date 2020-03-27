@@ -28,7 +28,7 @@ class BrowseViewController: UIViewController {
     }()
     
     lazy var settingsButton: UIBarButtonItem = {
-        let button = UIBarButtonItem(image: UIImage(systemName: "gear"), style: .plain, target: self, action: #selector(settingsButtonPressed))
+        let button = UIBarButtonItem(image: UIImage(systemName: SystemImages.gear.rawValue), style: .plain, target: self, action: #selector(settingsButtonPressed))
         return button
     }()
     
