@@ -9,6 +9,8 @@
 import UIKit
 
 class MainTabBarViewController: UITabBarController {
+    
+    // MARK: - UI Objects
     let browseVC: UINavigationController = {
         let browseNavVC = UINavigationController(rootViewController: BrowseViewController())
         return browseNavVC
@@ -24,7 +26,7 @@ class MainTabBarViewController: UITabBarController {
         return profileVC
     }()
     
-    
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
 

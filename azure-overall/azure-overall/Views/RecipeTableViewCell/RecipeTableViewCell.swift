@@ -10,6 +10,7 @@ import UIKit
 
 class RecipeTableViewCell: UITableViewCell {
     
+    // MARK: - UI Objects
     var recipeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .purple
@@ -28,7 +29,7 @@ class RecipeTableViewCell: UITableViewCell {
         return label
     }()
     
-    
+    // MARK: - Initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubviews()
@@ -39,7 +40,7 @@ class RecipeTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+    // MARK: - Lifecycle Functions
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

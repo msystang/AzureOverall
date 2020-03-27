@@ -10,6 +10,7 @@ import UIKit
 
 class CartViewController: UIViewController {
 
+    // MARK: - UI Objects
     lazy var recipeTableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .blue
@@ -19,6 +20,7 @@ class CartViewController: UIViewController {
         return tableView
     }()
     
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
@@ -27,5 +29,4 @@ class CartViewController: UIViewController {
         addConstraints()
     }
     
-
 }

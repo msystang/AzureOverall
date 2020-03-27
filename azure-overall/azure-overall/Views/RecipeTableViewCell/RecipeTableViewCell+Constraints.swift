@@ -9,6 +9,8 @@
 import UIKit
 
 extension RecipeTableViewCell {
+    
+    // MARK: - Public Constraint Methods
     func addSubviews() {
         self.addSubview(recipeImageView)
         self.addSubview(recipeTitleLabel)
@@ -21,6 +23,7 @@ extension RecipeTableViewCell {
         setQuantityLabelConstraints()
     }
     
+    // MARK: - Private Constraint Methods
     private func setRecipeImageViewConstraints() {
         recipeImageView.translatesAutoresizingMaskIntoConstraints = false
         

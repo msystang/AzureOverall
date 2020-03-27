@@ -9,6 +9,7 @@
 import UIKit
 
 extension BrowseViewController: UISearchBarDelegate {
+    
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
         searchBar.showsCancelButton = true
         return true

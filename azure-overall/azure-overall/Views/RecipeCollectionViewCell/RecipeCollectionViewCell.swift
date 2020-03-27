@@ -9,6 +9,8 @@
 import UIKit
 
 class RecipeCollectionViewCell: UICollectionViewCell {
+    
+    // MARK: - UI Objects
     var recipeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .cyan
@@ -30,7 +32,7 @@ class RecipeCollectionViewCell: UICollectionViewCell {
     }()
     
     
-    //MARK: - Initializers
+    // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()

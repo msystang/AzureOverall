@@ -9,6 +9,8 @@
 import UIKit
 
 extension CartViewController {
+    
+    // MARK: - Public Constraint Methods
     func addSubviews() {
         view.addSubview(recipeTableView)
     }
@@ -18,6 +20,7 @@ extension CartViewController {
         setRecipeTableViewConstraints()
     }
     
+    // MARK: - Private Constraint Methods
     private func setRecipeTableViewConstraints() {
         recipeTableView.translatesAutoresizingMaskIntoConstraints = false
         

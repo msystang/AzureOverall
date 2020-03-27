@@ -9,6 +9,7 @@
 import UIKit
 
 extension BrowseViewController: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 7
     }
@@ -19,10 +20,10 @@ extension BrowseViewController: UICollectionViewDataSource {
         return cell
     }
     
-    
 }
 
 extension BrowseViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
          let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
@@ -36,7 +37,6 @@ extension BrowseViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: ((self.view.frame.width / 2) - 15), height:((self.view.frame.width / 2) - 15));
         }
     
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        let recipe = collectionView.cellForItem(at: indexPath)
         
@@ -44,4 +44,5 @@ extension BrowseViewController: UICollectionViewDelegateFlowLayout {
         
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
+    
 }

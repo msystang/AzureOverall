@@ -9,17 +9,19 @@
 import UIKit
 
 extension BrowseViewController {
+    
+    // MARK: - Public Constraint Methods
     func addSubviews() {
         view.addSubview(searchBar)
         view.addSubview(recipeCollectionView)
     }
-    
     
     func addConstraints() {
         setSearchBarConstraints()
         setRecipeCollectionViewConstraints()
     }
     
+    // MARK: - Private Constraint Methods
     private func setSearchBarConstraints() {
         searchBar.translatesAutoresizingMaskIntoConstraints = false
         
