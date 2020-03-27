@@ -43,9 +43,10 @@ extension BrowseViewController: UICollectionViewDelegateFlowLayout {
         }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let recipe = collectionView.cellForItem(at: indexPath)
+        let recipe = recipes[indexPath.row]
         
         let detailVC = DetailViewController()
+        detailVC.recipe = recipe
         
         self.navigationController?.pushViewController(detailVC, animated: true)
     }
