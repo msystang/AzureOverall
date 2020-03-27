@@ -49,8 +49,8 @@ extension RecipeTableViewCell {
         NSLayoutConstraint.activate([
             quantityLabel.topAnchor.constraint(equalTo: recipeTitleLabel.bottomAnchor),
             quantityLabel.leadingAnchor.constraint(equalTo: recipeTitleLabel.leadingAnchor),
-            quantityLabel.rightAnchor.constraint(equalTo: self.rightAnchor),
-            quantityLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+            quantityLabel.rightAnchor.constraint(equalTo: recipeTitleLabel.rightAnchor),
+            quantityLabel.bottomAnchor.constraint(equalTo: recipeImageView.bottomAnchor)
         ])
     }
     
