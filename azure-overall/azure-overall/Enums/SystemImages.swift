@@ -6,5 +6,11 @@
 //  Copyright © 2020 Sunni Tang. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
+enum SystemImages: String {
+    case gear
+    case magnifyingGlass = "magnifyingglass.circle"
+    case cart
+    case person
+}
