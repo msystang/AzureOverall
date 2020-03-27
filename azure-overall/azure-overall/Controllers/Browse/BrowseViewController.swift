@@ -44,6 +44,11 @@ class BrowseViewController: UIViewController {
         addSubviews()
         addConstraints()
     }
+    
+    // MARK: - Objc Methods
+    @objc func settingsButtonPressed() {
+        
+    }
 
 
 }
