@@ -13,5 +13,10 @@ struct Recipe {
     let title: String
     let readyInMinutes: Int
     let servings: Int
-    let image: String
+    private let image: String
+        
+    var imageUrl: String {
+        return "https://spoonacular.com/recipeImages/\(image)"
+    }
+    
 }
