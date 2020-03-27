@@ -20,6 +20,7 @@ extension BrowseViewController: UICollectionViewDataSource {
         let recipe = recipes[indexPath.row]
         
         cell.recipeTitleLabel.text = recipe.title
+        cell.recipeInfoLabel.text = "\(recipe.servings) servings, \(recipe.readyInMinutes) minutes"
         
         return cell
     }
