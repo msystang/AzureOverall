@@ -9,7 +9,7 @@
 import UIKit
 
 class BrowseViewController: UIViewController {
-
+    
     // MARK: - UI Objects
     lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
@@ -28,10 +28,10 @@ class BrowseViewController: UIViewController {
     }()
     
     // TODO: Detetmine where to put Settings, change to menu?
-//    lazy var settingsButton: UIBarButtonItem = {
-//        let button = UIBarButtonItem(image: UIImage(systemName: SystemImages.gear.rawValue), style: .plain, target: self, action: #selector(settingsButtonPressed))
-//        return button
-//    }()
+    //    lazy var settingsButton: UIBarButtonItem = {
+    //        let button = UIBarButtonItem(image: UIImage(systemName: SystemImages.gear.rawValue), style: .plain, target: self, action: #selector(settingsButtonPressed))
+    //        return button
+    //    }()
     
     // MARK: - Internal Properties
     var searchString: String? = nil {
@@ -44,7 +44,7 @@ class BrowseViewController: UIViewController {
     
     var recipes = [Recipe]() {
         didSet {
-            print("Got recipes")
+            recipeCollectionView.reloadData()
         }
     }
     
@@ -81,6 +81,6 @@ class BrowseViewController: UIViewController {
             }
         }
     }
-
+    
 }
 
