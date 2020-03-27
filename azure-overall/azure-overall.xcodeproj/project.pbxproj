@@ -34,6 +34,7 @@
 		EA5D6B8C242E6BA100BEB9B2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B8B242E6BA100BEB9B2 /* NetworkManager.swift */; };
 		EA5D6B8F242E6BFA00BEB9B2 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */; };
 		EA5D6B91242E6FE900BEB9B2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */; };
+		EA5D6B93242E78A600BEB9B2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B92242E78A600BEB9B2 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		EA5D6B8B242E6BA100BEB9B2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		EA5D6B92242E78A600BEB9B2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B57242D137800BEB9B2 /* App Lifecycle */,
+				EA5D6B94242E78B300BEB9B2 /* Models */,
 				EA5D6B58242D151100BEB9B2 /* Controllers */,
 				EA5D6B72242D3F1900BEB9B2 /* Views */,
 				EA5D6B8A242E600700BEB9B2 /* Supporting Files */,
@@ -271,6 +274,14 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		EA5D6B94242E78B300BEB9B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B92242E78A600BEB9B2 /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -390,6 +401,7 @@
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
 				EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */,
 				EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */,
+				EA5D6B93242E78A600BEB9B2 /* Recipe.swift in Sources */,
 				EA5D6B66242D2C7500BEB9B2 /* SignUpViewController.swift in Sources */,
 				EA5D6B91242E6FE900BEB9B2 /* HTTPMethod.swift in Sources */,
 				EA5D6B2E242CF6C200BEB9B2 /* AppDelegate.swift in Sources */,
