@@ -63,6 +63,24 @@ class BrowseViewController: UIViewController {
 //
 //    }
 
+    // MARK: - Internal Methods
+    private func loadRecipes() {
+        // TODO: Update searchCount
+        let urlStr = RecipeNetworkHelper.getUrlStr(from: searchString ?? "", searchCount: 7)
+        
+        // Dispatches data task asynchronously on the main thread
+        DispatchQueue.main.async {
+            RecipeNetworkHelper.manager.getRecipes(from: urlStr) { (result) in
+                switch result {
+                case .failure(let error):
+                    // TODO: Handle error, create alerts
+                    print(error)
+                case .success(let recipes):
+                    self.recipes = recipes
+                }
+            }
+        }
+    }
 
 }
 

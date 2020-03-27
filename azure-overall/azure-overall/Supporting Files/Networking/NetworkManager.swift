@@ -26,9 +26,7 @@ class NetworkManager {
         urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
         urlSession.dataTask(with: urlRequest) { (data, response, error) in
-            // Dispatches data task asynchronously on the main thread
-            DispatchQueue.main.async {
-                
+
                 // guard that we received data
                 guard let data = data else {
                     completion(.failure(.noDataReceived))
@@ -54,7 +52,6 @@ class NetworkManager {
                 }
                 
                 completion(.success(data))
-            }
         }.resume()
     }
     
