@@ -13,8 +13,13 @@ enum AppError: Error {
 }
 
 enum NetworkingError: Error {
+    // NetworkingManager Errors
     case noDataReceived
     case badStatusCode
     case noInternetConnection
     case other(rawError: Error)
+    
+    // RecipeNetworkHelper Errors
+    case badURL
+    case couldNotParseJSON(rawError: Error)
 }
