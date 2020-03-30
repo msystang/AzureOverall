@@ -27,7 +27,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Assigns the app's windowScene to the window on the device
         window?.windowScene = windowScene
         // Assigns the rootViewController
-        window?.rootViewController = MainTabBarViewController()
+//        window?.rootViewController = MainTabBarViewController()
+        
+        window?.rootViewController = LogInViewController()
         
         // Shows the current window
         window?.makeKeyAndVisible()
