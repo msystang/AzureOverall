@@ -49,6 +49,8 @@
 		EA5D6BAF243296FC00BEB9B2 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BAE243296FC00BEB9B2 /* AppUser.swift */; };
 		EA5D6BB12432990500BEB9B2 /* LogInViewController+LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB02432990500BEB9B2 /* LogInViewController+LogIn.swift */; };
 		EA5D6BB32432992F00BEB9B2 /* LogInViewController+SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB22432992F00BEB9B2 /* LogInViewController+SignUp.swift */; };
+		EA5D6BB624329EF200BEB9B2 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB524329EF200BEB9B2 /* PersistenceManager.swift */; };
+		EA5D6BB82432A08600BEB9B2 /* RecipePersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB72432A08600BEB9B2 /* RecipePersistenceHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,8 @@
 		EA5D6BAE243296FC00BEB9B2 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		EA5D6BB02432990500BEB9B2 /* LogInViewController+LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+LogIn.swift"; sourceTree = "<group>"; };
 		EA5D6BB22432992F00BEB9B2 /* LogInViewController+SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+SignUp.swift"; sourceTree = "<group>"; };
+		EA5D6BB524329EF200BEB9B2 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		EA5D6BB72432A08600BEB9B2 /* RecipePersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePersistenceHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +368,7 @@
 		EA5D6BA32432883300BEB9B2 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EA5D6BB424329EE200BEB9B2 /* Persistene */,
 				EA5D6BA924328DA200BEB9B2 /* Firebase */,
 				EA5D6B8D242E6BA800BEB9B2 /* Networking */,
 				EA5D6B86242E552200BEB9B2 /* Enums */,
@@ -388,6 +393,15 @@
 				EA5D6BAC243296CC00BEB9B2 /* FirestoreService.swift */,
 			);
 			path = Firebase;
+			sourceTree = "<group>";
+		};
+		EA5D6BB424329EE200BEB9B2 /* Persistene */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6BB524329EF200BEB9B2 /* PersistenceManager.swift */,
+				EA5D6BB72432A08600BEB9B2 /* RecipePersistenceHelper.swift */,
+			);
+			path = Persistene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,6 +580,7 @@
 				EA5D6B68242D2CB700BEB9B2 /* SettingsViewController.swift in Sources */,
 				EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */,
 				EA5D6B8C242E6BA100BEB9B2 /* NetworkManager.swift in Sources */,
+				EA5D6BB624329EF200BEB9B2 /* PersistenceManager.swift in Sources */,
 				EA5D6B75242D402000BEB9B2 /* RecipeCollectionViewCell.swift in Sources */,
 				EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */,
 				EA5D6B98243237D300BEB9B2 /* DetailViewController+Constraints.swift in Sources */,
@@ -578,6 +593,7 @@
 				EA5D6B8F242E6BFA00BEB9B2 /* Errors.swift in Sources */,
 				EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */,
 				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
+				EA5D6BB82432A08600BEB9B2 /* RecipePersistenceHelper.swift in Sources */,
 				EA5D6B96242E7C0600BEB9B2 /* RecipeNetworkHelper.swift in Sources */,
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
 				EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */,
