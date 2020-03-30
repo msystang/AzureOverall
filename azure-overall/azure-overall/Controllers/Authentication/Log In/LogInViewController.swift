@@ -42,21 +42,23 @@ class LogInViewController: UIViewController {
         return textField
     }()
     
-    lazy var logInButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Login", for: .normal)
-        button.showsTouchWhenHighlighted = true
-        button.backgroundColor = .red
-        button.addTarget(self, action: #selector(logInButtonPressed), for: .touchUpInside)
-        return button
-    }()
-    
     lazy var signUpButton: UIButton = {
         let button = UIButton()
         button.setTitle("Sign Me Up!", for: .normal)
         button.showsTouchWhenHighlighted = true
         button.backgroundColor = .red
-        button.addTarget(self, action: #selector(signUpButtonPressed), for: .touchUpInside)
+        button.tag = 0
+        button.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
+        return button
+    }()
+    
+    lazy var logInButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Login", for: .normal)
+        button.showsTouchWhenHighlighted = true
+        button.backgroundColor = .red
+        button.tag = 1
+        button.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
         return button
     }()
     
@@ -81,7 +83,7 @@ class LogInViewController: UIViewController {
     }
     
     // MARK: - Objective-C Functions
-    @objc func logInButtonPressed() {
+    @objc func buttonPressed(sender: UIButton) {
         disableButtons()
         
         //Todo: Create validateTextFields func for both buttons
@@ -100,13 +102,14 @@ class LogInViewController: UIViewController {
             return
         }
         
-        attemptLogIn(email: email, password: password)
-        
-    }
-    
-    @objc func signUpButtonPressed() {
-        disableButtons()
-        
+        switch sender.tag {
+        case 0:
+            attemptSignUp(email: email, password: password)
+        case 1:
+            attemptLogIn(email: email, password: password)
+        default:
+            showAlert(title: "Oops!", message: "This button shouldn't exist.")
+        }
     }
     
     // MARK: - Internal Methods
