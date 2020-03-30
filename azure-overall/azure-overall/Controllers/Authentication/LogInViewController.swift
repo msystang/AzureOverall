@@ -10,9 +10,16 @@ import UIKit
 
 class LogInViewController: UIViewController {
     // MARK: - UI Objects
+    var titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Azure Overall"
+        label.textAlignment = .center
+        return label
+    }()
     
     var logoImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
         imageView.image = UIImage(named: AppImages.logo.rawValue)
         return imageView
     }()
