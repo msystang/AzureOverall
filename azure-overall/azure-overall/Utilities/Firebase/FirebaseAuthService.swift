@@ -20,7 +20,7 @@ class FirebaseAuthService {
     }
     
     // MARK: - Instance Methods
-    func createNewUser(email: String, password: String, completion: @escaping (Result<User,Error>) -> ()) {
+    func signUpUser(email: String, password: String, completion: @escaping (Result<User,Error>) -> ()) {
         auth.createUser(withEmail: email, password: password) { (result, error) in
             if let createdUser = result?.user {
                 completion(.success(createdUser))
@@ -30,7 +30,7 @@ class FirebaseAuthService {
         }
     }
     
-    func loginUser(email: String, password: String, completion: @escaping (Result<(), Error>) -> ()) {
+    func logInUser(email: String, password: String, completion: @escaping (Result<(), Error>) -> ()) {
         auth.signIn(withEmail: email, password: password) { (result, error) in
             if (result?.user) != nil {
                 completion(.success(()))
