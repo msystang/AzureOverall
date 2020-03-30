@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
     
     lazy var quantityLabel: UILabel = {
         let label = UILabel()
-        label.text = "10"
+        label.text = "10 (place holder)"
         return label
     }()
     
@@ -32,6 +32,8 @@ class DetailViewController: UIViewController {
         let stepper = UIStepper()
         stepper.minimumValue = 0
         stepper.maximumValue = 20
+        stepper.value = 0
+        stepper.stepValue = 1
         return stepper
     }()
     
