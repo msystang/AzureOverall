@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
     // MARK: - UI Objects
@@ -75,11 +76,31 @@ class LogInViewController: UIViewController {
         
         addSubviews()
         addConstraints()
+        
+        disableButtons()
     }
     
     // MARK: - Objective-C Functions
     @objc func logInButtonPressed() {
         disableButtons()
+        
+        //Todo: Create validateTextFields func for both buttons
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            showAlert(title: "Error", message: "Please fill out all fields.")
+            return
+        }
+        
+        guard email.isValidEmail else {
+            showAlert(title: "Error", message: "Please enter a valid email")
+            return
+        }
+        
+        guard password.isValidPassword else {
+            showAlert(title: "Error", message: "Please enter a valid password. Passwords must have at least 8 characters.")
+            return
+        }
+        
+        attemptLogIn(email: email, password: password)
         
     }
     
