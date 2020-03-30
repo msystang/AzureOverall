@@ -78,6 +78,8 @@ class DetailViewController: UIViewController {
     }
     
     @objc private func updateCartButtonPressed() {
+        
+        
         print("Updated Cart!")
     }
     

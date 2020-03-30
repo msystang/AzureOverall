@@ -21,7 +21,7 @@ struct RecipePersistenceHelper {
         return try persistenceManager.getObjects()
     }
     
-    func deletePhotoJournal(with tag: Int) throws {
+    func deleteRecipe(with tag: Int) throws {
         try persistenceManager.delete(objectWith: tag)
     }
     
