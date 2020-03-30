@@ -45,6 +45,10 @@
 		EA5D6BA6243288C300BEB9B2 /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BA5243288C300BEB9B2 /* ViewController+Alert.swift */; };
 		EA5D6BA8243289FC00BEB9B2 /* String+AuthValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BA7243289FC00BEB9B2 /* String+AuthValidation.swift */; };
 		EA5D6BAB24328DAE00BEB9B2 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BAA24328DAE00BEB9B2 /* FirebaseAuthService.swift */; };
+		EA5D6BAD243296CC00BEB9B2 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BAC243296CC00BEB9B2 /* FirestoreService.swift */; };
+		EA5D6BAF243296FC00BEB9B2 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BAE243296FC00BEB9B2 /* AppUser.swift */; };
+		EA5D6BB12432990500BEB9B2 /* LogInViewController+LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB02432990500BEB9B2 /* LogInViewController+LogIn.swift */; };
+		EA5D6BB32432992F00BEB9B2 /* LogInViewController+SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB22432992F00BEB9B2 /* LogInViewController+SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +108,10 @@
 		EA5D6BA5243288C300BEB9B2 /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
 		EA5D6BA7243289FC00BEB9B2 /* String+AuthValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AuthValidation.swift"; sourceTree = "<group>"; };
 		EA5D6BAA24328DAE00BEB9B2 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		EA5D6BAC243296CC00BEB9B2 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		EA5D6BAE243296FC00BEB9B2 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
+		EA5D6BB02432990500BEB9B2 /* LogInViewController+LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+LogIn.swift"; sourceTree = "<group>"; };
+		EA5D6BB22432992F00BEB9B2 /* LogInViewController+SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+SignUp.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B92242E78A600BEB9B2 /* Recipe.swift */,
+				EA5D6BAE243296FC00BEB9B2 /* AppUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -336,6 +345,8 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */,
+				EA5D6BB02432990500BEB9B2 /* LogInViewController+LogIn.swift */,
+				EA5D6BB22432992F00BEB9B2 /* LogInViewController+SignUp.swift */,
 				EA5D6BA12432842E00BEB9B2 /* LogInViewController+TextField.swift */,
 				EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */,
 			);
@@ -374,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6BAA24328DAE00BEB9B2 /* FirebaseAuthService.swift */,
+				EA5D6BAC243296CC00BEB9B2 /* FirestoreService.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -550,6 +562,7 @@
 				EA5D6B32242CF6C200BEB9B2 /* BrowseViewController.swift in Sources */,
 				EA5D6BA8243289FC00BEB9B2 /* String+AuthValidation.swift in Sources */,
 				EA5D6B56242D0D8100BEB9B2 /* Secrets.swift in Sources */,
+				EA5D6BB32432992F00BEB9B2 /* LogInViewController+SignUp.swift in Sources */,
 				EA5D6B68242D2CB700BEB9B2 /* SettingsViewController.swift in Sources */,
 				EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */,
 				EA5D6B8C242E6BA100BEB9B2 /* NetworkManager.swift in Sources */,
@@ -570,8 +583,11 @@
 				EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */,
 				EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */,
 				EA5D6BA6243288C300BEB9B2 /* ViewController+Alert.swift in Sources */,
+				EA5D6BAF243296FC00BEB9B2 /* AppUser.swift in Sources */,
 				EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */,
+				EA5D6BAD243296CC00BEB9B2 /* FirestoreService.swift in Sources */,
 				EA5D6B93242E78A600BEB9B2 /* Recipe.swift in Sources */,
+				EA5D6BB12432990500BEB9B2 /* LogInViewController+LogIn.swift in Sources */,
 				EA5D6B66242D2C7500BEB9B2 /* SignUpViewController.swift in Sources */,
 				EA5D6B91242E6FE900BEB9B2 /* HTTPMethod.swift in Sources */,
 				EA5D6B2E242CF6C200BEB9B2 /* AppDelegate.swift in Sources */,
