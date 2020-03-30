@@ -49,6 +49,7 @@ extension BrowseViewController: UICollectionViewDelegateFlowLayout {
         }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // TODO: Guard that there is a recipe, else showAlert
         let recipe = recipes[indexPath.row]
         
         let detailVC = DetailViewController()

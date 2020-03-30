@@ -28,6 +28,7 @@ extension CartViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // TODO: Guard that there is a recipe, else showAlert
         let recipe = recipes[indexPath.row]
         
         let detailVC = DetailViewController()

@@ -39,6 +39,7 @@
 		EA5D6B93242E78A600BEB9B2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B92242E78A600BEB9B2 /* Recipe.swift */; };
 		EA5D6B96242E7C0600BEB9B2 /* RecipeNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B95242E7C0600BEB9B2 /* RecipeNetworkHelper.swift */; };
 		EA5D6B98243237D300BEB9B2 /* DetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B97243237D300BEB9B2 /* DetailViewController+Constraints.swift */; };
+		EA5D6B9C24325E9200BEB9B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		EA5D6B92242E78A600BEB9B2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		EA5D6B95242E7C0600BEB9B2 /* RecipeNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNetworkHelper.swift; sourceTree = "<group>"; };
 		EA5D6B97243237D300BEB9B2 /* DetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Constraints.swift"; sourceTree = "<group>"; };
+		EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				EA5D6B72242D3F1900BEB9B2 /* Views */,
 				EA5D6B8A242E600700BEB9B2 /* Supporting Files */,
 				EA5D6B3B242CF6C500BEB9B2 /* Info.plist */,
+				EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */,
 			);
 			path = "azure-overall";
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 			files = (
 				EA5D6B3A242CF6C500BEB9B2 /* LaunchScreen.storyboard in Resources */,
 				EA5D6B37242CF6C500BEB9B2 /* Assets.xcassets in Resources */,
+				EA5D6B9C24325E9200BEB9B2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
