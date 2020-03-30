@@ -41,6 +41,7 @@
 		EA5D6B98243237D300BEB9B2 /* DetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B97243237D300BEB9B2 /* DetailViewController+Constraints.swift */; };
 		EA5D6B9C24325E9200BEB9B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */; };
 		EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */; };
+		EA5D6BA22432842E00BEB9B2 /* LogInViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BA12432842E00BEB9B2 /* LogInViewController+TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		EA5D6B97243237D300BEB9B2 /* DetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Constraints.swift"; sourceTree = "<group>"; };
 		EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+Constraints.swift"; sourceTree = "<group>"; };
+		EA5D6BA12432842E00BEB9B2 /* LogInViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+TextField.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,9 +239,8 @@
 		EA5D6B62242D2C5600BEB9B2 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */,
-				EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */,
-				EA5D6B65242D2C7500BEB9B2 /* SignUpViewController.swift */,
+				EA5D6B9F243283F200BEB9B2 /* Log In */,
+				EA5D6BA02432840200BEB9B2 /* Sign Up */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -324,6 +325,24 @@
 				EA5D6B92242E78A600BEB9B2 /* Recipe.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EA5D6B9F243283F200BEB9B2 /* Log In */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */,
+				EA5D6BA12432842E00BEB9B2 /* LogInViewController+TextField.swift */,
+				EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */,
+			);
+			path = "Log In";
+			sourceTree = "<group>";
+		};
+		EA5D6BA02432840200BEB9B2 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6B65242D2C7500BEB9B2 /* SignUpViewController.swift */,
+			);
+			path = "Sign Up";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,6 +540,7 @@
 				EA5D6B91242E6FE900BEB9B2 /* HTTPMethod.swift in Sources */,
 				EA5D6B2E242CF6C200BEB9B2 /* AppDelegate.swift in Sources */,
 				EA5D6B30242CF6C200BEB9B2 /* SceneDelegate.swift in Sources */,
+				EA5D6BA22432842E00BEB9B2 /* LogInViewController+TextField.swift in Sources */,
 				EA5D6B6D242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
