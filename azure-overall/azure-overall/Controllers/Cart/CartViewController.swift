@@ -21,7 +21,11 @@ class CartViewController: UIViewController {
     }()
     
     // MARK: - Internal Properties
-    var recipes = [Recipe]()
+    var recipes = [Recipe]() {
+        didSet{
+            recipeTableView.reloadData()
+        }
+    }
     
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
@@ -34,9 +38,23 @@ class CartViewController: UIViewController {
         setTitle()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadCart()
+    }
+    
     // MARK: - Private Methods
     private func setTitle() {
         self.navigationItem.title = "My Cart"
+    }
+    
+    private func loadCart() {
+        
+        do {
+            recipes = try RecipePersistenceHelper.manager.getRecipes()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
     
 }
