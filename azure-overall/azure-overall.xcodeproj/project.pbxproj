@@ -42,6 +42,9 @@
 		EA5D6B9C24325E9200BEB9B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */; };
 		EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */; };
 		EA5D6BA22432842E00BEB9B2 /* LogInViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BA12432842E00BEB9B2 /* LogInViewController+TextField.swift */; };
+		EA5D6BA6243288C300BEB9B2 /* ViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BA5243288C300BEB9B2 /* ViewController+Alert.swift */; };
+		EA5D6BA8243289FC00BEB9B2 /* String+AuthValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BA7243289FC00BEB9B2 /* String+AuthValidation.swift */; };
+		EA5D6BAB24328DAE00BEB9B2 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BAA24328DAE00BEB9B2 /* FirebaseAuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,9 @@
 		EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+Constraints.swift"; sourceTree = "<group>"; };
 		EA5D6BA12432842E00BEB9B2 /* LogInViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+TextField.swift"; sourceTree = "<group>"; };
+		EA5D6BA5243288C300BEB9B2 /* ViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Alert.swift"; sourceTree = "<group>"; };
+		EA5D6BA7243289FC00BEB9B2 /* String+AuthValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AuthValidation.swift"; sourceTree = "<group>"; };
+		EA5D6BAA24328DAE00BEB9B2 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 				EA5D6B94242E78B300BEB9B2 /* Models */,
 				EA5D6B58242D151100BEB9B2 /* Controllers */,
 				EA5D6B72242D3F1900BEB9B2 /* Views */,
+				EA5D6BA32432883300BEB9B2 /* Utilities */,
 				EA5D6B8A242E600700BEB9B2 /* Supporting Files */,
 				EA5D6B3B242CF6C500BEB9B2 /* Info.plist */,
 				EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */,
@@ -286,7 +293,6 @@
 				EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */,
 				EA5D6B76242D404600BEB9B2 /* CellIdentifiers.swift */,
 				EA5D6B87242E553B00BEB9B2 /* Images.swift */,
-				EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -302,8 +308,6 @@
 		EA5D6B8A242E600700BEB9B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA5D6B8D242E6BA800BEB9B2 /* Networking */,
-				EA5D6B86242E552200BEB9B2 /* Enums */,
 				EA5D6B36242CF6C500BEB9B2 /* Assets.xcassets */,
 				EA5D6B55242D0D8100BEB9B2 /* Secrets.swift */,
 			);
@@ -313,6 +317,7 @@
 		EA5D6B8D242E6BA800BEB9B2 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */,
 				EA5D6B8B242E6BA100BEB9B2 /* NetworkManager.swift */,
 				EA5D6B95242E7C0600BEB9B2 /* RecipeNetworkHelper.swift */,
 			);
@@ -343,6 +348,34 @@
 				EA5D6B65242D2C7500BEB9B2 /* SignUpViewController.swift */,
 			);
 			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		EA5D6BA32432883300BEB9B2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6BA924328DA200BEB9B2 /* Firebase */,
+				EA5D6B8D242E6BA800BEB9B2 /* Networking */,
+				EA5D6B86242E552200BEB9B2 /* Enums */,
+				EA5D6BA4243288A700BEB9B2 /* Extensions */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EA5D6BA4243288A700BEB9B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6BA5243288C300BEB9B2 /* ViewController+Alert.swift */,
+				EA5D6BA7243289FC00BEB9B2 /* String+AuthValidation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA5D6BA924328DA200BEB9B2 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D6BAA24328DAE00BEB9B2 /* FirebaseAuthService.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,7 +546,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5D6BAB24328DAE00BEB9B2 /* FirebaseAuthService.swift in Sources */,
 				EA5D6B32242CF6C200BEB9B2 /* BrowseViewController.swift in Sources */,
+				EA5D6BA8243289FC00BEB9B2 /* String+AuthValidation.swift in Sources */,
 				EA5D6B56242D0D8100BEB9B2 /* Secrets.swift in Sources */,
 				EA5D6B68242D2CB700BEB9B2 /* SettingsViewController.swift in Sources */,
 				EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */,
@@ -534,6 +569,7 @@
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
 				EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */,
 				EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */,
+				EA5D6BA6243288C300BEB9B2 /* ViewController+Alert.swift in Sources */,
 				EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */,
 				EA5D6B93242E78A600BEB9B2 /* Recipe.swift in Sources */,
 				EA5D6B66242D2C7500BEB9B2 /* SignUpViewController.swift in Sources */,
