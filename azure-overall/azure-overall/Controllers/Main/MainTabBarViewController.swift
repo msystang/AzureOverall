@@ -34,7 +34,7 @@ class MainTabBarViewController: UITabBarController {
         cartVC.tabBarItem = UITabBarItem(title: "My Cart", image: UIImage(systemName:SystemImages.cart.rawValue), tag: 1)
         settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName:SystemImages.gear.rawValue), tag: 2)
         
-        self.viewControllers = [browseVC, cartVC, settingsVC]
+        self.viewControllers = [browseVC, cartVC]
     }
     
 }
