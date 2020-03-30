@@ -10,6 +10,31 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var recipeImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .yellow
+        return imageView
+    }()
+    
+    lazy var quantityLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Quantity"
+        return label
+    }()
+    
+    lazy var quantityStepper: UIStepper = {
+        let stepper = UIStepper()
+        stepper.minimumValue = 0
+        stepper.maximumValue = 20
+        return stepper
+    }()
+    
+    lazy var quantityStackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [quantityLabel, quantityStepper])
+        stackView.alignment = .center
+        stackView.axis = .horizontal
+        return stackView
+    }()
     
     var recipe: Recipe!
     
