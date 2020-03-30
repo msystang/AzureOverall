@@ -17,9 +17,13 @@ extension CartViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.recipeTableViewCell.rawValue, for: indexPath) as! RecipeTableViewCell
         let recipe = recipes[indexPath.row]
+        let imgUrl = URL(string: recipe.imageUrl)
         
         cell.recipeTitleLabel.text = recipe.title
-        cell.quantityLabel.text = "\(recipe.quantity)"
+        //TODO: deal with force unwrap
+        cell.quantityLabel.text = "\(recipe.quantity!)"
+        cell.recipeImageView.kf.indicatorType = .activity
+        cell.recipeImageView.kf.setImage(with: imgUrl, placeholder: UIImage(named: AppImages.noPhoto.rawValue))
         
         return cell
     }
