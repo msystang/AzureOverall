@@ -59,23 +59,27 @@ class LogInViewController: UIViewController {
         let button = UIButton()
         button.setTitle("Sign Me Up!", for: .normal)
         button.showsTouchWhenHighlighted = true
+        button.backgroundColor = .red
         button.addTarget(self, action: #selector(signUpButtonPressed), for: .touchUpInside)
         return button
     }()
     
     lazy var buttonStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [signUpButton, logInButton])
-        stackView.alignment = .center
-        stackView.distribution = .equalSpacing
+        stackView.alignment = .top
+        stackView.spacing = 5
         stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
         return stackView 
     }()
     
     // MARK: - Private Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         
-        
+        addSubviews()
+        addConstraints()
     }
     
     // MARK: - Objective-C Functions
