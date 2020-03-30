@@ -78,9 +78,18 @@ class DetailViewController: UIViewController {
     }
     
     @objc private func updateCartButtonPressed() {
+        recipe.quantity = Int(quantityStepper.value)
         
+        print(recipe.quantity)
         
-        print("Updated Cart!")
+        do {
+            try RecipePersistenceHelper.manager.saveRecipe(recipe: recipe)
+            print("Updated Cart!")
+        } catch {
+            print(error.localizedDescription)
+
+        }
+        
     }
     
     // MARK: - Private Methods
