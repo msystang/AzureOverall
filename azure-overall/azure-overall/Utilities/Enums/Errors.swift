@@ -23,3 +23,8 @@ enum NetworkingError: Error {
     case badURL
     case couldNotParseJSON(rawError: Error)
 }
+
+enum PersistenceError: Error {
+    case noDataFromUrlPath
+    case couldNotDecodeFromUrlPath
+}
