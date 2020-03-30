@@ -30,6 +30,13 @@ class CartViewController: UIViewController {
         
         addSubviews()
         addConstraints()
+        
+        setTitle()
+    }
+    
+    // MARK: - Private Methods
+    private func setTitle() {
+        self.navigationItem.title = "My Cart"
     }
     
 }
