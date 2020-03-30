@@ -28,7 +28,7 @@ class LogInViewController: UIViewController {
         let textField = UITextField()
         textField.placeholder = "Email"
         textField.borderStyle = .roundedRect
-        
+        textField.delegate = self
         return textField
     }()
     
@@ -37,6 +37,7 @@ class LogInViewController: UIViewController {
         textField.placeholder = "Password"
         textField.isSecureTextEntry = true
         textField.borderStyle = .roundedRect
+        textField.delegate = self
         return textField
     }()
     
