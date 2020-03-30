@@ -42,7 +42,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .green
         
+        //TODO: Add title to NavBar
         print(recipe.title)
+        
+        addSubviews()
+        addConstraints()
     }
     
 }
