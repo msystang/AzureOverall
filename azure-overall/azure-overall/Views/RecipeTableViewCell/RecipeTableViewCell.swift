@@ -14,6 +14,8 @@ class RecipeTableViewCell: UITableViewCell {
     var recipeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .purple
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         return imageView
     }()
     

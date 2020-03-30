@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
     // MARK: - UI Objects
     var recipeImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
         imageView.backgroundColor = .yellow
         return imageView
     }()
