@@ -26,16 +26,16 @@ class DetailViewController: UIViewController {
     
     lazy var quantityLabel: UILabel = {
         let label = UILabel()
-        label.text = "10 (place holder)"
         return label
     }()
     
     lazy var quantityStepper: UIStepper = {
         let stepper = UIStepper()
         stepper.minimumValue = 0
-        stepper.maximumValue = 20
+        stepper.maximumValue = 9
         stepper.value = 0
         stepper.stepValue = 1
+        stepper.addTarget(self, action: #selector(stepperValueChanged(sender:)), for: .valueChanged)
         return stepper
     }()
     
@@ -58,6 +58,14 @@ class DetailViewController: UIViewController {
         addConstraints()
         
         setTitle()
+        
+        loadQuantityLabel()
+        loadImage()
+    }
+    
+    // MARK: - Objc Functions
+    @objc private func stepperValueChanged(sender: UIStepper) {
+        quantityLabel.text = Int(quantityStepper.value).description
     }
     
     // MARK: - Private Methods
@@ -66,4 +74,13 @@ class DetailViewController: UIViewController {
         self.navigationItem.title = recipe.title
     }
     
+    private func loadQuantityLabel() {
+        quantityLabel.text = "0"
+    }
+    
+    private func loadImage() {
+        recipeImageView.kf.indicatorType = .activity
+        recipeImageView.kf.setImage(with: URL(string: recipe.imageUrl), placeholder: UIImage(named: AppImages.noPhoto.rawValue))
+    }
+
 }
