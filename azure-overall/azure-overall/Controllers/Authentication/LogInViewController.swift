@@ -40,17 +40,11 @@ class LogInViewController: UIViewController {
         return textField
     }()
     
-    lazy var textFieldStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField])
-        stackView.alignment = .center
-        stackView.distribution = .equalSpacing
-        stackView.axis = .vertical
-        return stackView
-    }()
-    
     lazy var logInButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
+        button.showsTouchWhenHighlighted = true
+        button.backgroundColor = .red
         button.addTarget(self, action: #selector(logInButtonPressed), for: .touchUpInside)
         return button
     }()
