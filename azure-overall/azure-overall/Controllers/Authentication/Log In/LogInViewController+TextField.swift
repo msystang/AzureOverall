@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension LogInViewController: UITextFieldDelegate, textfiel {
+extension LogInViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
