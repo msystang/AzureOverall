@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import FirebaseAuth
+
+extension LogInViewController {
+    func attemptLogIn(email: String, password: String) {
+        FirebaseAuthService.manager.logInUser(email: email, password: password) { (result) in
+            self.handleLoginResponse(with: result)
+        }
+    }
+    
+    private func handleLoginResponse(with result: Result<(), Error>) {
+        switch result {
+        case .success:
+            transitionToMainTabBarVC()
+        case .failure(let error):
+            showAlert(title: "Error", message: "Could not log in: \(error.localizedDescription)")
+            enableButtons()
+        }
+    }
+    
+}
