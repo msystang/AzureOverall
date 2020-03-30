@@ -20,6 +20,7 @@ class CartViewController: UIViewController {
         return tableView
     }()
     
+    // MARK: - Internal Properties
     var recipes = [Recipe]()
     
     // MARK: - Lifecycle Functions

@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    // MARK: - UI Objects
     var recipeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .yellow
@@ -44,8 +44,10 @@ class DetailViewController: UIViewController {
         return stackView
     }()
     
+    // MARK: - Internal Properties
     var recipe: Recipe!
     
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .green
@@ -56,7 +58,9 @@ class DetailViewController: UIViewController {
         setTitle()
     }
     
+    // MARK: - Private Methods
     private func setTitle() {
+        //TODO: Text wrap if title is too long
         self.navigationItem.title = recipe.title
     }
     

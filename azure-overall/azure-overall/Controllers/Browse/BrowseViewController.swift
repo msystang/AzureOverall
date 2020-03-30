@@ -56,6 +56,8 @@ class BrowseViewController: UIViewController {
         
         addSubviews()
         addConstraints()
+        
+        setTitle()
     }
     
     // MARK: - Objc Methods
@@ -64,6 +66,10 @@ class BrowseViewController: UIViewController {
     //    }
     
     // MARK: - Internal Methods
+    private func setTitle() {
+        self.navigationItem.title = "Browse Recipes"
+    }
+    
     private func loadRecipes() {
         // TODO: Update searchCount
         let urlStr = RecipeNetworkHelper.getUrlStr(from: searchString ?? "", searchCount: 7)
