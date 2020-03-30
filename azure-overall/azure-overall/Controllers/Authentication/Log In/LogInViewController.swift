@@ -109,10 +109,33 @@ class LogInViewController: UIViewController {
         
     }
     
-    // MARK: - Private Methods
-    private func disableButtons() {
+    // MARK: - Internal Methods
+    func disableButtons() {
         signUpButton.isEnabled = false
         logInButton.isEnabled = false
+    }
+    
+    func enableButtons() {
+        signUpButton.isEnabled = true
+        logInButton.isEnabled = true
+    }
+    
+    // MARK: - Private Methods
+    private func attemptLogIn(email: String, password: String) {
+        FirebaseAuthService.manager.loginUser(email: email, password: password) { (result) in
+            self.handleLoginResponse(with: result)
+        }
+    }
+    
+    private func handleLoginResponse(with result: Result<(), Error>) {
+        switch result {
+        case .success:
+            print("Signed in")
+
+        case .failure(let error):
+            showAlert(title: "Error", message: "Could not log in: \(error.localizedDescription)")
+            enableButtons()
+        }
     }
     
 }
