@@ -16,9 +16,15 @@ class DetailViewController: UIViewController {
         return imageView
     }()
     
-    lazy var quantityLabel: UILabel = {
+    lazy var quantityTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "Quantity"
+        return label
+    }()
+    
+    lazy var quantityLabel: UILabel = {
+        let label = UILabel()
+        label.text = "10"
         return label
     }()
     

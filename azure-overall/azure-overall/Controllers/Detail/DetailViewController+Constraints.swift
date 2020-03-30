@@ -12,6 +12,7 @@ extension DetailViewController {
     // MARK: - Public Constraint Methods
     func addSubviews() {
         view.addSubview(recipeImageView)
+        view.addSubview(quantityTitleLabel)
         view.addSubview(quantityLabel)
         view.addSubview(quantityStepper)
         view.addSubview(quantityStackView)
@@ -19,6 +20,7 @@ extension DetailViewController {
     
     func addConstraints() {
         setRecipeImageViewConstraints()
+        setQuantityTitleLabelConstraints()
         setQuantityStackViewConstraints()
     }
     
@@ -34,16 +36,27 @@ extension DetailViewController {
         ])
     }
     
+    private func setQuantityTitleLabelConstraints() {
+        quantityTitleLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            quantityTitleLabel.topAnchor.constraint(equalTo: recipeImageView.bottomAnchor, constant: 50),
+            quantityTitleLabel.centerXAnchor.constraint(equalTo: recipeImageView.centerXAnchor),
+            quantityTitleLabel.widthAnchor.constraint(equalTo: recipeImageView.widthAnchor, multiplier: 0.8),
+            quantityTitleLabel.heightAnchor.constraint(equalToConstant: 30),
+        ])
+    }
+    
     private func setQuantityStackViewConstraints() {
         quantityLabel.translatesAutoresizingMaskIntoConstraints = false
         quantityStepper.translatesAutoresizingMaskIntoConstraints = false
         quantityStackView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            quantityStackView.topAnchor.constraint(equalTo: recipeImageView.bottomAnchor, constant: 50),
+            quantityStackView.topAnchor.constraint(equalTo: quantityTitleLabel.bottomAnchor, constant: 10),
             quantityStackView.centerXAnchor.constraint(equalTo: recipeImageView.centerXAnchor),
             quantityStackView.widthAnchor.constraint(equalTo: recipeImageView.widthAnchor, multiplier: 0.8),
-            quantityStackView.heightAnchor.constraint(equalToConstant: 200)
+            quantityStackView.heightAnchor.constraint(equalToConstant: 30)
         ])
     }
     
