@@ -25,7 +25,7 @@ extension BrowseViewController: UICollectionViewDataSource {
         cell.recipeInfoLabel.text = "\(recipe.servings) servings, \(recipe.readyInMinutes) minutes"
         cell.recipeImageView.kf.indicatorType = .activity
         //Add placeholder img name to enum
-        cell.recipeImageView.kf.setImage(with: imgUrl, placeholder: UIImage(named: "no-photo"))
+        cell.recipeImageView.kf.setImage(with: imgUrl, placeholder: UIImage(named: AppImages.noPhoto.rawValue))
         
         
         return cell

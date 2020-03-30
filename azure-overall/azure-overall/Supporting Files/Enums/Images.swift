@@ -14,3 +14,8 @@ enum SystemImages: String {
     case cart
     case person
 }
+
+enum AppImages: String {
+    case noPhoto = "no-photo"
+    case logo
+}
