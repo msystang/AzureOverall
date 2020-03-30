@@ -7,3 +7,31 @@
 //
 
 import Foundation
+
+struct RecipePersistenceHelper {
+    // MARK: - Internal Properties
+    static let manager = RecipePersistenceHelper()
+    
+    // MARK: - Internal methods
+    func saveRecipe(recipe: Recipe) throws {
+        try persistenceManager.save(newObject: recipe)
+    }
+    
+    func getRecipes() throws -> [Recipe] {
+        return try persistenceManager.getObjects()
+    }
+    
+    func deletePhotoJournal(with tag: Int) throws {
+        try persistenceManager.delete(objectWith: tag)
+    }
+    
+    func editRecipe(at tag: Int, with newObject: Recipe) throws {
+        try persistenceManager.edit(objectWith: tag, newElement: newObject)
+    }
+    
+    // MARK: - Private Properties
+    private let persistenceManager = PersistenceManager<Recipe>(fileName: "Recipe.plist")
+    
+    // MARK: - Private Initializers
+    private init() {}
+}
