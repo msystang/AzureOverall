@@ -26,7 +26,7 @@ struct RecipePersistenceHelper {
     }
     
     func editRecipe(at tag: Int, with newObject: Recipe) throws {
-        try persistenceManager.edit(objectWith: tag, newElement: newObject)
+        try persistenceManager.edit(objectWith: tag, newObject: newObject)
     }
     
     // MARK: - Private Properties
