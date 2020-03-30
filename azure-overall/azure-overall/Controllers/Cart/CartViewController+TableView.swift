@@ -21,7 +21,7 @@ extension CartViewController: UITableViewDataSource {
         
         cell.recipeTitleLabel.text = recipe.title
         //TODO: deal with force unwrap
-        cell.quantityLabel.text = "\(recipe.quantity!)"
+        cell.quantityLabel.text = "Quantity: \(recipe.quantity!)"
         cell.recipeImageView.kf.indicatorType = .activity
         cell.recipeImageView.kf.setImage(with: imgUrl, placeholder: UIImage(named: AppImages.noPhoto.rawValue))
         
