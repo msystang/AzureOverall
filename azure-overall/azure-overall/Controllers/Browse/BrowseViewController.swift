@@ -15,6 +15,8 @@ class BrowseViewController: UIViewController {
         let searchBar = UISearchBar()
         searchBar.searchBarStyle = .minimal
         searchBar.delegate = self
+        // TODO: Randomize phrases?
+        searchBar.placeholder = "What are you in the mood for today?"
         return searchBar
     }()
     
