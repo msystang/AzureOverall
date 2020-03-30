@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 extension BrowseViewController: UICollectionViewDataSource {
     
@@ -18,9 +19,14 @@ extension BrowseViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.recipeCollectionViewCell.rawValue, for: indexPath) as! RecipeCollectionViewCell
         
         let recipe = recipes[indexPath.row]
+        let imgUrl = URL(string: recipe.imageUrl)
         
         cell.recipeTitleLabel.text = recipe.title
         cell.recipeInfoLabel.text = "\(recipe.servings) servings, \(recipe.readyInMinutes) minutes"
+        cell.recipeImageView.kf.indicatorType = .activity
+        //Add placeholder img name to enum
+        cell.recipeImageView.kf.setImage(with: imgUrl, placeholder: UIImage(named: "no-photo"))
+        
         
         return cell
     }

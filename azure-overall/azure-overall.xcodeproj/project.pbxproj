@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -131,7 +131,6 @@
 				60D91E51F51D0AB3A42F2676 /* Pods-azure-overallTests.debug.xcconfig */,
 				A0B516378B341C436DF120B1 /* Pods-azure-overallTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
