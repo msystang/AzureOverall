@@ -40,6 +40,7 @@
 		EA5D6B96242E7C0600BEB9B2 /* RecipeNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B95242E7C0600BEB9B2 /* RecipeNetworkHelper.swift */; };
 		EA5D6B98243237D300BEB9B2 /* DetailViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B97243237D300BEB9B2 /* DetailViewController+Constraints.swift */; };
 		EA5D6B9C24325E9200BEB9B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */; };
+		EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		EA5D6B95242E7C0600BEB9B2 /* RecipeNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeNetworkHelper.swift; sourceTree = "<group>"; };
 		EA5D6B97243237D300BEB9B2 /* DetailViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController+Constraints.swift"; sourceTree = "<group>"; };
 		EA5D6B9B24325E9200BEB9B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInViewController+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */,
+				EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */,
 				EA5D6B65242D2C7500BEB9B2 /* SignUpViewController.swift */,
 			);
 			path = Authentication;
@@ -510,6 +513,7 @@
 				EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */,
 				EA5D6B96242E7C0600BEB9B2 /* RecipeNetworkHelper.swift in Sources */,
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
+				EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */,
 				EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */,
 				EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */,
 				EA5D6B93242E78A600BEB9B2 /* Recipe.swift in Sources */,
