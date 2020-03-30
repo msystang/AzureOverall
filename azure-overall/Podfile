@@ -7,6 +7,8 @@ target 'azure-overall' do
 
   # Pods for azure-overall
 	pod 'Kingfisher', '~> 5.13'
+	pod 'Firebase/Auth'
+	pod 'Firebase/Firestore'
 
   target 'azure-overallTests' do
     inherit! :search_paths
