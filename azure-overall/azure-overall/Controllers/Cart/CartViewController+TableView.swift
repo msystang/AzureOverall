@@ -11,11 +11,16 @@ import UIKit
 extension CartViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return recipes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.recipeTableViewCell.rawValue, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.recipeTableViewCell.rawValue, for: indexPath) as! RecipeTableViewCell
+        let recipe = recipes[indexPath.row]
+        
+        cell.recipeTitleLabel.text = recipe.title
+        cell.quantityLabel.text = "\(recipe.quantity)"
+        
         return cell
     }
     
