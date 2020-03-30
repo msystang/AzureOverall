@@ -16,12 +16,14 @@ extension DetailViewController {
         view.addSubview(quantityLabel)
         view.addSubview(quantityStepper)
         view.addSubview(quantityStackView)
+        view.addSubview(updateCartButton)
     }
     
     func addConstraints() {
         setRecipeImageViewConstraints()
         setQuantityTitleLabelConstraints()
         setQuantityStackViewConstraints()
+        setUpdateCartButtonConstraints()
     }
     
     // MARK: - Private Constraint Methods
@@ -57,6 +59,17 @@ extension DetailViewController {
             quantityStackView.centerXAnchor.constraint(equalTo: recipeImageView.centerXAnchor),
             quantityStackView.widthAnchor.constraint(equalTo: recipeImageView.widthAnchor, multiplier: 0.8),
             quantityStackView.heightAnchor.constraint(equalToConstant: 30)
+        ])
+    }
+    
+    private func setUpdateCartButtonConstraints() {
+        updateCartButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            updateCartButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            updateCartButton.widthAnchor.constraint(equalToConstant: 120),
+            updateCartButton.heightAnchor.constraint(equalToConstant: 40),
+            updateCartButton.topAnchor.constraint(equalTo: quantityStackView.bottomAnchor, constant: 40)
         ])
     }
     

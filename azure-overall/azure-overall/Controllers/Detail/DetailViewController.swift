@@ -46,6 +46,15 @@ class DetailViewController: UIViewController {
         return stackView
     }()
     
+    lazy var updateCartButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Update Cart", for: .normal)
+        button.showsTouchWhenHighlighted = true
+        button.backgroundColor = .red
+        button.addTarget(self, action: #selector(updateCartButtonPressed), for: .touchUpInside)
+        return button
+    }()
+    
     // MARK: - Internal Properties
     var recipe: Recipe!
     
@@ -66,6 +75,10 @@ class DetailViewController: UIViewController {
     // MARK: - Objc Functions
     @objc private func stepperValueChanged(sender: UIStepper) {
         quantityLabel.text = Int(quantityStepper.value).description
+    }
+    
+    @objc private func updateCartButtonPressed() {
+        print("Updated Cart!")
     }
     
     // MARK: - Private Methods
