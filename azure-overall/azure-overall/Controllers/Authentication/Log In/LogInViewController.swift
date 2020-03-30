@@ -24,7 +24,7 @@ class LogInViewController: UIViewController {
         return imageView
     }()
     
-    var emailTextField: UITextField = {
+    lazy var emailTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Email"
         textField.borderStyle = .roundedRect
@@ -32,7 +32,7 @@ class LogInViewController: UIViewController {
         return textField
     }()
     
-    var passwordTextField: UITextField = {
+    lazy var passwordTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Password"
         textField.isSecureTextEntry = true
