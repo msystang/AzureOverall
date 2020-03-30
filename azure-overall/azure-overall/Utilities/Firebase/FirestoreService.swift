@@ -25,7 +25,6 @@ class FirestoreService {
     func createUser(user: AppUser, completion: @escaping (Result<(), Error>) -> ()) {
         var fields = user.fieldsDict
         fields["dateCreated"] = Date()
-        fields["cart"] = [String:Int]()
         db.collection(FireStoreCollections.users.rawValue).document(user.uid).setData(fields) { (error) in
             if let error = error {
                 completion(.failure(error))
