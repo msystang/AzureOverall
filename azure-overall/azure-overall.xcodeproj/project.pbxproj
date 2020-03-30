@@ -32,7 +32,7 @@
 		EA5D6B7D242D552100BEB9B2 /* CartViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B7C242D552100BEB9B2 /* CartViewController+Constraints.swift */; };
 		EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B82242D578200BEB9B2 /* RecipeTableViewCell.swift */; };
 		EA5D6B85242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B84242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift */; };
-		EA5D6B88242E553B00BEB9B2 /* SystemImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B87242E553B00BEB9B2 /* SystemImages.swift */; };
+		EA5D6B88242E553B00BEB9B2 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B87242E553B00BEB9B2 /* Images.swift */; };
 		EA5D6B8C242E6BA100BEB9B2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B8B242E6BA100BEB9B2 /* NetworkManager.swift */; };
 		EA5D6B8F242E6BFA00BEB9B2 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */; };
 		EA5D6B91242E6FE900BEB9B2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */; };
@@ -86,7 +86,7 @@
 		EA5D6B7C242D552100BEB9B2 /* CartViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartViewController+Constraints.swift"; sourceTree = "<group>"; };
 		EA5D6B82242D578200BEB9B2 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		EA5D6B84242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecipeTableViewCell+Constraints.swift"; sourceTree = "<group>"; };
-		EA5D6B87242E553B00BEB9B2 /* SystemImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImages.swift; sourceTree = "<group>"; };
+		EA5D6B87242E553B00BEB9B2 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		EA5D6B8B242E6BA100BEB9B2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -281,7 +281,7 @@
 			children = (
 				EA5D6B8E242E6BFA00BEB9B2 /* Errors.swift */,
 				EA5D6B76242D404600BEB9B2 /* CellIdentifiers.swift */,
-				EA5D6B87242E553B00BEB9B2 /* SystemImages.swift */,
+				EA5D6B87242E553B00BEB9B2 /* Images.swift */,
 				EA5D6B90242E6FE900BEB9B2 /* HTTPMethod.swift */,
 			);
 			path = Enums;
@@ -500,7 +500,7 @@
 				EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */,
 				EA5D6B98243237D300BEB9B2 /* DetailViewController+Constraints.swift in Sources */,
 				EA5D6B7B242D536100BEB9B2 /* CartViewController+TableView.swift in Sources */,
-				EA5D6B88242E553B00BEB9B2 /* SystemImages.swift in Sources */,
+				EA5D6B88242E553B00BEB9B2 /* Images.swift in Sources */,
 				EA5D6B6F242D367D00BEB9B2 /* BrowseViewController+Constraints.swift in Sources */,
 				EA5D6B79242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift in Sources */,
 				EA5D6B7D242D552100BEB9B2 /* CartViewController+Constraints.swift in Sources */,
