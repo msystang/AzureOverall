@@ -78,11 +78,19 @@ class LogInViewController: UIViewController {
     
     // MARK: - Objective-C Functions
     @objc func logInButtonPressed() {
+        disableButtons()
         
     }
     
     @objc func signUpButtonPressed() {
+        disableButtons()
         
+    }
+    
+    // MARK: - Private Methods
+    private func disableButtons() {
+        signUpButton.isEnabled = false
+        logInButton.isEnabled = false
     }
     
 }
