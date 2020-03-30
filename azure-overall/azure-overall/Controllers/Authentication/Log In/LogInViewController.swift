@@ -123,22 +123,23 @@ class LogInViewController: UIViewController {
         logInButton.isEnabled = true
     }
     
-    // MARK: - Private Methods
-    private func attemptLogIn(email: String, password: String) {
-        FirebaseAuthService.manager.loginUser(email: email, password: password) { (result) in
-            self.handleLoginResponse(with: result)
+    func transitionToMainTabBarVC() {
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let sceneDelegate = windowScene.delegate as? SceneDelegate, let window = sceneDelegate.window
+            else {
+                return
         }
+        
+        UIView.transition(with: window, duration: 0.3, options: .transitionFlipFromRight, animations: {
+            window.rootViewController = {
+                let browseVC = MainTabBarViewController()
+                browseVC.selectedIndex = 0
+                return browseVC
+            }()
+        }, completion: nil)
     }
     
-    private func handleLoginResponse(with result: Result<(), Error>) {
-        switch result {
-        case .success:
-            print("Signed in")
-
-        case .failure(let error):
-            showAlert(title: "Error", message: "Could not log in: \(error.localizedDescription)")
-            enableButtons()
-        }
-    }
+    // MARK: - Private Methods
+    
     
 }
