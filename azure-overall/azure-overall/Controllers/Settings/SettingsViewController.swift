@@ -7,24 +7,26 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SettingsViewController: UIViewController {
-
+    
+    // MARK: - UI Objects
+    var userInfoLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    
+    lazy var logOutButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
+    
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemPink
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
