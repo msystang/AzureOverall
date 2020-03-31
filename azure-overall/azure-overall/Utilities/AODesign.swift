@@ -13,12 +13,13 @@ struct AODesign {
     static let azure = #colorLiteral(red: 0, green: 0.4980392157, blue: 1, alpha: 1)
     static let white = UIColor.white
     static let black = UIColor.black
+    static let gray = UIColor.darkGray
     
     // MARK: Font
     enum fontSize: CGFloat {
-        case small = 15
-        case med = 20
-        case large = 30
+        case small = 13
+        case med = 16
+        case large = 20
     }
     
     enum fontName: String {
