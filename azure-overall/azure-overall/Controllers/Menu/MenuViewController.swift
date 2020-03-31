@@ -14,11 +14,13 @@ class MenuViewController: AOViewController {
     // MARK: - UI Objects
     lazy var emailTitleLabel: AOTitleLabel = {
         let label = AOTitleLabel()
+        label.text = "Email"
         return label
     }()
     
     lazy var emailLabel: AOSubtitleLabel = {
         let label = AOSubtitleLabel()
+        label.text = FirebaseAuthService.manager.currentUser?.email ?? "No email for this account"
         return label
     }()
     
@@ -34,6 +36,16 @@ class MenuViewController: AOViewController {
         return barButton
     }()
     
+    var updateLabel: AOSubtitleLabel = {
+        let label = AOSubtitleLabel()
+        label.text = """
+                    More features to come, such as:
+                    - Search based on user preferences, diets, restrictions, serving sizes, preparation time
+                    - Ability to favorite recipes and add notes 
+                    """
+        return label
+    }()
+
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,12 +63,10 @@ class MenuViewController: AOViewController {
         }
     }
     
-    // MARK: - Internal Methods
-    
     // MARK: - Private Methods
     private func setUpNavBar() {
         self.navigationItem.title = NavBarTitle.menu.rawValue
         self.navigationItem.rightBarButtonItem = logOutButton
     }
-
+    
 }
