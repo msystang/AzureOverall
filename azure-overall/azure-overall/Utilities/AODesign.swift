@@ -17,8 +17,8 @@ struct AODesign {
     
     // MARK: Font
     enum fontSize: CGFloat {
-        case small = 13
-        case med = 16
+        case small = 15
+        case med = 17
         case large = 20
     }
     
