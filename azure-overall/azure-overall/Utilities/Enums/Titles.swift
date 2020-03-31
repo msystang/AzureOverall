@@ -29,6 +29,7 @@ enum ButtonTitle: String {
     
     case updateCart = "Update Cart"
     
+    case checkOut = "Check Out"
     case logOut = "Log Out"
 }
 
@@ -39,6 +40,7 @@ enum SearchBarTitle: String {
 enum NavBarTitle: String {
     case browse = "Browse Recipes"
     case cart = "My Cart"
+    case menu = "Menu"
 }
 
 enum LabelTitles: String {

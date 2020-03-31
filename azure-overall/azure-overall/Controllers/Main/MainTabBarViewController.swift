@@ -15,7 +15,7 @@ class MainTabBarViewController: UITabBarController {
     
     let cartVC = AONavigationController(rootViewController: CartViewController())
     
-    let settingsVC = SettingsViewController()
+    let settingsVC = AONavigationController(rootViewController: MenuViewController())
     
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {

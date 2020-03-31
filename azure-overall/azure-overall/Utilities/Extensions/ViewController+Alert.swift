@@ -18,4 +18,18 @@ extension UIViewController {
         alertController.addAction(action)
         present(alertController, animated: true, completion: nil)
     }
+    
+    // MARK: actionAlert
+    func actionAlert(title:String?, message:String?, actionTitle:String?, actionCompletion: ((UIAlertAction) -> ())?) {
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: actionTitle, style:.destructive, handler: actionCompletion)
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        
+        alertController.addAction(action)
+        alertController.addAction(cancel)
+        
+        present(alertController,animated: true)
+    }
 }

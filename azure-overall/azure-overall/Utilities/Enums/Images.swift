@@ -14,6 +14,7 @@ enum SystemImages: String {
     case magnifyingGlass = "magnifyingglass.circle"
     case cart
     case menu = "list.bullet"
+    case logOut = "person.crop.circle.fill.badge.xmark"
 }
 
 // MARK: - AppImages
