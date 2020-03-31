@@ -104,6 +104,11 @@ class DetailViewController: AOViewController {
                 print(error.localizedDescription)
             }
         }
+        
+        self.flashAert(title: "Success!", message: nil) {
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
     
     // MARK: - Private Methods
