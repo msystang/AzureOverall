@@ -27,19 +27,17 @@ class LogInViewController: UIViewController {
         return imageView
     }()
     
-    lazy var emailTextField: UITextField = {
-        let textField = UITextField()
+    lazy var emailTextField: AOTextField = {
+        let textField = AOTextField()
         textField.placeholder = TextFieldTitle.email.rawValue
-        textField.borderStyle = .roundedRect
         textField.delegate = self
         return textField
     }()
     
-    lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
+    lazy var passwordTextField: AOTextField = {
+        let textField = AOTextField()
         textField.placeholder = TextFieldTitle.password.rawValue
         textField.isSecureTextEntry = true
-        textField.borderStyle = .roundedRect
         textField.delegate = self
         return textField
     }()

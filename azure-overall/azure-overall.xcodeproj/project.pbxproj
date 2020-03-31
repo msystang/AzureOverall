@@ -58,6 +58,7 @@
 		EA5D6BCA2433C63900BEB9B2 /* AOTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */; };
 		EA5D6BCC2433CB5100BEB9B2 /* AOSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCB2433CB5100BEB9B2 /* AOSubtitleLabel.swift */; };
 		EA5D6BCE2433CEA800BEB9B2 /* AOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */; };
+		EA5D6BD02433D36E00BEB9B2 /* AOTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCF2433D36E00BEB9B2 /* AOTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOTitleLabel.swift; sourceTree = "<group>"; };
 		EA5D6BCB2433CB5100BEB9B2 /* AOSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOSubtitleLabel.swift; sourceTree = "<group>"; };
 		EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOButton.swift; sourceTree = "<group>"; };
+		EA5D6BCF2433D36E00BEB9B2 /* AOTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 				EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */,
 				EA5D6BCB2433CB5100BEB9B2 /* AOSubtitleLabel.swift */,
 				EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */,
+				EA5D6BCF2433D36E00BEB9B2 /* AOTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 				EA5D6BC024339E7500BEB9B2 /* AODesign.swift in Sources */,
 				EA5D6B96242E7C0600BEB9B2 /* RecipeNetworkHelper.swift in Sources */,
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
+				EA5D6BD02433D36E00BEB9B2 /* AOTextField.swift in Sources */,
 				EA5D6BC22433B7C600BEB9B2 /* AONavigationController.swift in Sources */,
 				EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */,
 				EA5D6BCA2433C63900BEB9B2 /* AOTitleLabel.swift in Sources */,
