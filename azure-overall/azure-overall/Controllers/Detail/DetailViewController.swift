@@ -11,7 +11,12 @@ import UIKit
 class DetailViewController: AOViewController {
     // MARK: - UI Objects
     
-    //TODO: Create titleLabel and add to nav bar title view
+    lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        setUpTitleLabel(label: label)
+        return label
+    }()
+    
     var recipeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -104,8 +109,16 @@ class DetailViewController: AOViewController {
     
     // MARK: - Private Methods
     private func setTitle() {
-        //TODO: Text wrap if title is too long
-        self.navigationItem.title = recipe.title
+        navigationItem.titleView = titleLabel
+    }
+    
+    private func setUpTitleLabel(label: UILabel) {
+        label.numberOfLines = 0
+        label.text = recipe.title
+        label.textColor = AODesign.white
+        label.textAlignment = .center
+        label.font = UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.med.rawValue)
+        label.adjustsFontSizeToFitWidth = true
     }
     
     private func loadImage() {

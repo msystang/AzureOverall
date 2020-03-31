@@ -15,7 +15,6 @@ extension CartViewController {
         view.addSubview(recipeTableView)
     }
     
-    
     func addConstraints() {
         setRecipeTableViewConstraints()
     }
