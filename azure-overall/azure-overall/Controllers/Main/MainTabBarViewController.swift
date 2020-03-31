@@ -21,10 +21,7 @@ class MainTabBarViewController: UITabBarController {
         return cartNavVC
     }()
     
-    let settingsVC: UIViewController = {
-        let settingsVC = SettingsViewController()
-        return settingsVC
-    }()
+    let settingsVC = SettingsViewController()
     
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {

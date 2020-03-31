@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: AOViewController {
     
     // MARK: - UI Objects
     var userInfoLabel: UILabel = {
@@ -26,7 +26,6 @@ class SettingsViewController: UIViewController {
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
 
     }
 

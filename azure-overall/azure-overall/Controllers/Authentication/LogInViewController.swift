@@ -75,7 +75,6 @@ class LogInViewController: UIViewController {
     // MARK: - Private Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         
         addSubviews()
         addConstraints()
