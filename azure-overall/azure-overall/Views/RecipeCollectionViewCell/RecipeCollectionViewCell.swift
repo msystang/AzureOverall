@@ -11,11 +11,9 @@ import UIKit
 class RecipeCollectionViewCell: UICollectionViewCell {
     
     // MARK: - UI Objects
-    var recipeImageView: UIImageView = {
+    lazy var recipeImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.backgroundColor = .cyan
+        setUpImageView(imageView: imageView)
         return imageView
     }()
     
@@ -41,5 +39,11 @@ class RecipeCollectionViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setUpImageView(imageView: UIImageView) {
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 10
     }
 }
