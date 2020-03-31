@@ -11,15 +11,9 @@ import UIKit
 class MainTabBarViewController: UITabBarController {
     
     // MARK: - UI Objects
-    let browseVC: UINavigationController = {
-        let browseNavVC = UINavigationController(rootViewController: BrowseViewController())
-        return browseNavVC
-    }()
+    let browseVC = AONavigationController(rootViewController: BrowseViewController())
     
-    let cartVC: UINavigationController = {
-       let cartNavVC = UINavigationController(rootViewController: CartViewController())
-        return cartNavVC
-    }()
+    let cartVC = AONavigationController(rootViewController: CartViewController())
     
     let settingsVC = SettingsViewController()
     
