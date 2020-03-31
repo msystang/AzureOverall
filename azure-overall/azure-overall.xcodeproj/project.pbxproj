@@ -20,7 +20,7 @@
 		EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B5B242D16DF00BEB9B2 /* DetailViewController.swift */; };
 		EA5D6B5E242D16F700BEB9B2 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */; };
 		EA5D6B64242D2C6C00BEB9B2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */; };
-		EA5D6B68242D2CB700BEB9B2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B67242D2CB700BEB9B2 /* SettingsViewController.swift */; };
+		EA5D6B68242D2CB700BEB9B2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B67242D2CB700BEB9B2 /* MenuViewController.swift */; };
 		EA5D6B6B242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */; };
 		EA5D6B6D242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6C242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift */; };
 		EA5D6B6F242D367D00BEB9B2 /* BrowseViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6B6E242D367D00BEB9B2 /* BrowseViewController+Constraints.swift */; };
@@ -59,6 +59,7 @@
 		EA5D6BCC2433CB5100BEB9B2 /* AOSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCB2433CB5100BEB9B2 /* AOSubtitleLabel.swift */; };
 		EA5D6BCE2433CEA800BEB9B2 /* AOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */; };
 		EA5D6BD02433D36E00BEB9B2 /* AOTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCF2433D36E00BEB9B2 /* AOTextField.swift */; };
+		EA5D6BD22433E24900BEB9B2 /* MenuViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BD12433E24800BEB9B2 /* MenuViewController+Constraints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +94,7 @@
 		EA5D6B5B242D16DF00BEB9B2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EA5D6B5D242D16F700BEB9B2 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		EA5D6B67242D2CB700BEB9B2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EA5D6B67242D2CB700BEB9B2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+SearchBar.swift"; sourceTree = "<group>"; };
 		EA5D6B6C242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		EA5D6B6E242D367D00BEB9B2 /* BrowseViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseViewController+Constraints.swift"; sourceTree = "<group>"; };
@@ -132,6 +133,7 @@
 		EA5D6BCB2433CB5100BEB9B2 /* AOSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOSubtitleLabel.swift; sourceTree = "<group>"; };
 		EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOButton.swift; sourceTree = "<group>"; };
 		EA5D6BCF2433D36E00BEB9B2 /* AOTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOTextField.swift; sourceTree = "<group>"; };
+		EA5D6BD12433E24800BEB9B2 /* MenuViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+Constraints.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +238,7 @@
 				EA5D6B5F242D20E400BEB9B2 /* Browse */,
 				EA5D6B60242D20F200BEB9B2 /* Cart */,
 				EA5D6B61242D20F800BEB9B2 /* Detail */,
-				EA5D6B69242D2CBB00BEB9B2 /* Settings */,
+				EA5D6B69242D2CBB00BEB9B2 /* Menu */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,12 +273,13 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
-		EA5D6B69242D2CBB00BEB9B2 /* Settings */ = {
+		EA5D6B69242D2CBB00BEB9B2 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				EA5D6B67242D2CB700BEB9B2 /* SettingsViewController.swift */,
+				EA5D6B67242D2CB700BEB9B2 /* MenuViewController.swift */,
+				EA5D6BD12433E24800BEB9B2 /* MenuViewController+Constraints.swift */,
 			);
-			path = Settings;
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		EA5D6B72242D3F1900BEB9B2 /* Views */ = {
@@ -580,12 +583,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA5D6BD22433E24900BEB9B2 /* MenuViewController+Constraints.swift in Sources */,
 				EA5D6BAB24328DAE00BEB9B2 /* FirebaseAuthService.swift in Sources */,
 				EA5D6B32242CF6C200BEB9B2 /* BrowseViewController.swift in Sources */,
 				EA5D6BA8243289FC00BEB9B2 /* String+AuthValidation.swift in Sources */,
 				EA5D6B56242D0D8100BEB9B2 /* Secrets.swift in Sources */,
 				EA5D6BB32432992F00BEB9B2 /* LogInViewController+SignUp.swift in Sources */,
-				EA5D6B68242D2CB700BEB9B2 /* SettingsViewController.swift in Sources */,
+				EA5D6B68242D2CB700BEB9B2 /* MenuViewController.swift in Sources */,
 				EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */,
 				EA5D6B8C242E6BA100BEB9B2 /* NetworkManager.swift in Sources */,
 				EA5D6BBE24339E5600BEB9B2 /* AOViewController.swift in Sources */,

@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class SettingsViewController: AOViewController {
+class MenuViewController: AOViewController {
     
     // MARK: - UI Objects
     var userInfoLabel: UILabel = {
