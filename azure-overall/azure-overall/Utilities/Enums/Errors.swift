@@ -30,5 +30,6 @@ enum PersistenceError: Error {
     
     case noRecipeWithGivenIdInCart
     case multipleEntriesWithSameIdInCart
+    case couldNotGetTagToEditRecipe
     case other(rawError: Error)
 }
