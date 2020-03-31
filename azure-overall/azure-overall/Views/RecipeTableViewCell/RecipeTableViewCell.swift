@@ -25,8 +25,9 @@ class RecipeTableViewCell: UITableViewCell {
         return label
     }()
     
-    var quantityLabel: UILabel = {
-        let label = UILabel()
+    var quantityLabel: AOSubtitleLabel = {
+        let label = AOSubtitleLabel()
+        label.textAlignment = .left
         return label
     }()
     
