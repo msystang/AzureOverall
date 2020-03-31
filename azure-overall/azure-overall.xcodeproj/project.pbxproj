@@ -51,6 +51,7 @@
 		EA5D6BB624329EF200BEB9B2 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB524329EF200BEB9B2 /* PersistenceManager.swift */; };
 		EA5D6BB82432A08600BEB9B2 /* RecipePersistenceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB72432A08600BEB9B2 /* RecipePersistenceHelper.swift */; };
 		EA5D6BBA243394D800BEB9B2 /* Titles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BB9243394D800BEB9B2 /* Titles.swift */; };
+		EA5D6BBC24339C8000BEB9B2 /* FieldsDictKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BBB24339C8000BEB9B2 /* FieldsDictKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		EA5D6BB524329EF200BEB9B2 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		EA5D6BB72432A08600BEB9B2 /* RecipePersistenceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePersistenceHelper.swift; sourceTree = "<group>"; };
 		EA5D6BB9243394D800BEB9B2 /* Titles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Titles.swift; sourceTree = "<group>"; };
+		EA5D6BBB24339C8000BEB9B2 /* FieldsDictKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsDictKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +377,7 @@
 			children = (
 				EA5D6BAA24328DAE00BEB9B2 /* FirebaseAuthService.swift */,
 				EA5D6BAC243296CC00BEB9B2 /* FirestoreService.swift */,
+				EA5D6BBB24339C8000BEB9B2 /* FieldsDictKey.swift */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				EA5D6B88242E553B00BEB9B2 /* Images.swift in Sources */,
 				EA5D6B6F242D367D00BEB9B2 /* BrowseViewController+Constraints.swift in Sources */,
 				EA5D6BBA243394D800BEB9B2 /* Titles.swift in Sources */,
+				EA5D6BBC24339C8000BEB9B2 /* FieldsDictKey.swift in Sources */,
 				EA5D6B79242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift in Sources */,
 				EA5D6B7D242D552100BEB9B2 /* CartViewController+Constraints.swift in Sources */,
 				EA5D6B85242D59A600BEB9B2 /* RecipeTableViewCell+Constraints.swift in Sources */,
