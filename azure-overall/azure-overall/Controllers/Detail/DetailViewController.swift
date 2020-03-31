@@ -94,14 +94,14 @@ class DetailViewController: AOViewController {
             do {
                 try RecipePersistenceHelper.manager.saveRecipe(recipe: recipe)
             } catch {
-                print(error.localizedDescription)
+                okAlert(title: "Oops!", message: "Could not update cart at this time. Error: \(error)")
             }
             
         case true:
             do {
                 try RecipePersistenceHelper.manager.editRecipe(with: recipeID, with: recipe)
             } catch {
-                print(error.localizedDescription)
+                okAlert(title: "Oops!", message: "Could not update cart at this time. Error: \(error)")
             }
         }
         
@@ -141,7 +141,7 @@ class DetailViewController: AOViewController {
         do {
             isInCart = try RecipePersistenceHelper.manager.isInCart(recipeID: recipeID)
         } catch {
-            print(error.localizedDescription)
+            okAlert(title: "Oops!", message: "Could not perform this task at this time. Error: \(error)")
         }
         
         return isInCart
@@ -157,7 +157,7 @@ class DetailViewController: AOViewController {
             do {
                 recipe = try RecipePersistenceHelper.manager.getRecipe(with: recipeID)
             } catch {
-                print(error.localizedDescription)
+                okAlert(title: "Oops!", message: "Could not perform this task at this time. Error: \(error)")
             }
             quantityLabel.text = "\(Int(recipe.quantity ?? 0))"
         }

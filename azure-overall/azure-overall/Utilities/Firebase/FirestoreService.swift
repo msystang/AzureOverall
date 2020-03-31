@@ -29,7 +29,6 @@ class FirestoreService {
         db.collection(FireStoreCollections.users.rawValue).document(user.uid).setData(fields) { (error) in
             if let error = error {
                 completion(.failure(error))
-                print(error)
             }
             completion(.success(()))
         }

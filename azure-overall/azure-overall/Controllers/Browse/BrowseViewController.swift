@@ -78,8 +78,7 @@ class BrowseViewController: AOViewController {
             DispatchQueue.main.async {
                 switch result {
                 case .failure(let error):
-                    // TODO: Handle error, create alerts
-                    print(error)
+                    self.okAlert(title: "Oops!", message: "Couldn't get results for this search. Error: \(error)")
                 case .success(let recipes):
                     self.recipes = recipes
                 }

@@ -15,7 +15,7 @@ extension MenuViewController {
         FirebaseAuthService.manager.signOutUser { (result) in
             switch result {
             case .failure(let error):
-                print(error)
+                self.okAlert(title: "Oops!", message: "Could not log out at this time. Error: \(error)")
             case .success():
                 self.clearCart()
                 self.transitionToLogInVC()

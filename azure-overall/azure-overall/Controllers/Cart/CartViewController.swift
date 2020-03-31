@@ -71,7 +71,7 @@ class CartViewController: AOViewController {
         do {
             recipes = try RecipePersistenceHelper.manager.getRecipes()
         } catch {
-            print(error.localizedDescription)
+            okAlert(title: "Oops!", message: "Could not load your cart at this time. Error: \(error)")
         }
     }
     
@@ -88,7 +88,7 @@ class CartViewController: AOViewController {
         do {
             try RecipePersistenceHelper.manager.clearCart()
         } catch {
-            print(error)
+            okAlert(title: "Oops!", message: "Could not clear your cart at this time. Error: \(error)")
         }
         
         loadCart()
