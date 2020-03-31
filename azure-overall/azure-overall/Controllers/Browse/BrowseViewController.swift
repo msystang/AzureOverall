@@ -84,7 +84,7 @@ class BrowseViewController: AOViewController {
         searchBar.searchBarStyle = .minimal
         searchBar.placeholder = SearchBarTitle.placeholder.rawValue
         
-        searchBar.searchTextField.font = UIFont(name: AODesign.fontName.light.rawValue, size: AODesign.fontSize.small.rawValue)
+        searchBar.searchTextField.font = UIFont(name: AODesign.fontName.light.rawValue, size: AODesign.fontSize.med.rawValue)
         searchBar.searchTextField.textColor = AODesign.black
         searchBar.tintColor = AODesign.azure
     }
