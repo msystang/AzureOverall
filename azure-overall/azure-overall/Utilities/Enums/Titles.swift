@@ -8,8 +8,30 @@
 
 import Foundation
 
-enum TabBarTitles: String {
+enum TabBarTitle: String {
     case browse = "Browse"
     case cart = "My Cart"
     case settings = "Settings"
+}
+
+enum AppTitle: String {
+    case azureOverall = "Azure Overall"
+}
+
+enum TextFieldTitle: String {
+    case email = "Email"
+    case password = "Password"
+}
+
+enum ButtonTitle: String {
+    case signUp = "Sign Me Up"
+    case logIn = "Let's Eat"
+}
+
+enum SearchBarTitle: String {
+    case placeholder = "What are you in the mood for today?"
+}
+
+enum NavBarTitle: String {
+    case browse = "Browse Recipes"
 }
