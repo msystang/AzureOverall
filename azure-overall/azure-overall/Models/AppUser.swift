@@ -23,7 +23,7 @@ struct AppUser {
     
     var fieldsDict: [String: Any] {
         return [
-            "email": self.email ?? ""
+            FieldsDictKey.email.rawValue : self.email ?? ""
         ]
     }
     
@@ -37,8 +37,8 @@ struct AppUser {
     
     // Failing init when 'decoding' from Firestore (getting AppUser object from Firestore)
     init?(from dict: [String: Any], id: String) {
-        guard let email = dict["email"] as? String,
-            let dateCreated = (dict["dateCreated"] as? Timestamp)?.dateValue() else {
+        guard let email = dict[FieldsDictKey.email.rawValue] as? String,
+            let dateCreated = (dict[FieldsDictKey.dateCreated.rawValue] as? Timestamp)?.dateValue() else {
                 return nil
         }
         
