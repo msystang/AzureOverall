@@ -36,6 +36,11 @@ struct RecipePersistenceHelper {
             throw PersistenceError.couldNotGetTagToEditRecipe
         }
         
+        guard newObject.quantity != 0 else {
+            try deleteRecipe(with: tag)
+            return
+        }
+        
         try persistenceManager.edit(objectWith: tag, newObject: newObject)
     }
     
