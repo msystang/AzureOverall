@@ -45,7 +45,7 @@ class CartViewController: UIViewController {
     
     // MARK: - Private Methods
     private func setTitle() {
-        self.navigationItem.title = "My Cart"
+        self.navigationItem.title = NavBarTitle.cart.rawValue
     }
     
     private func loadCart() {
