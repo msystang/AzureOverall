@@ -37,6 +37,6 @@ extension UIViewController {
         alertController.addAction(action)
         alertController.addAction(cancel)
         
-        present(alertController,animated: true)
+        present(alertController, animated: true, completion: nil)
     }
 }
