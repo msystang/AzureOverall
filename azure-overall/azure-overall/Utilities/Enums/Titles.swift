@@ -38,3 +38,7 @@ enum NavBarTitle: String {
     case browse = "Browse Recipes"
     case cart = "My Cart"
 }
+
+enum LabelTitles: String {
+    case quantity = "Quantity"
+}
