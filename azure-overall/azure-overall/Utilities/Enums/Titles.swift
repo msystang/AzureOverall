@@ -11,7 +11,7 @@ import Foundation
 enum TabBarTitle: String {
     case browse = "Browse"
     case cart = "My Cart"
-    case settings = "Settings"
+    case menu = "Menu"
 }
 
 enum AppTitle: String {

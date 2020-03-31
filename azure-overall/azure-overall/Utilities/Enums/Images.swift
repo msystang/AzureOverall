@@ -13,7 +13,7 @@ enum SystemImages: String {
     case gear
     case magnifyingGlass = "magnifyingglass.circle"
     case cart
-    case person
+    case menu = "list.bullet"
 }
 
 // MARK: - AppImages

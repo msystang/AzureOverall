@@ -28,7 +28,7 @@ class MainTabBarViewController: UITabBarController {
     private func setUpTabBar() {
         browseVC.tabBarItem = UITabBarItem(title: TabBarTitle.browse.rawValue, image: UIImage(systemName: SystemImages.magnifyingGlass.rawValue), tag: 0)
         cartVC.tabBarItem = UITabBarItem(title: TabBarTitle.cart.rawValue, image: UIImage(systemName:SystemImages.cart.rawValue), tag: 1)
-        settingsVC.tabBarItem = UITabBarItem(title: TabBarTitle.settings.rawValue, image: UIImage(systemName:SystemImages.gear.rawValue), tag: 2)
+        settingsVC.tabBarItem = UITabBarItem(title: TabBarTitle.menu.rawValue, image: UIImage(systemName:SystemImages.menu.rawValue), tag: 2)
         
         self.viewControllers = [browseVC, cartVC, settingsVC]
     }
