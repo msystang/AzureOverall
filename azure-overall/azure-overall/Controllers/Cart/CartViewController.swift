@@ -13,10 +13,7 @@ class CartViewController: AOViewController {
     // MARK: - UI Objects
     lazy var recipeTableView: UITableView = {
         let tableView = UITableView()
-        tableView.backgroundColor = .blue
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(RecipeTableViewCell.self, forCellReuseIdentifier: CellIdentifiers.recipeTableViewCell.rawValue)
+        setUpTableView(tableView: tableView)
         return tableView
     }()
     
@@ -53,5 +50,14 @@ class CartViewController: AOViewController {
         } catch {
             print(error.localizedDescription)
         }
+    }
+    
+    private func setUpTableView(tableView: UITableView) {
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.register(RecipeTableViewCell.self, forCellReuseIdentifier: CellIdentifiers.recipeTableViewCell.rawValue)
+        
+        tableView.backgroundColor = .clear
+        tableView.separatorStyle = .none
     }
 }
