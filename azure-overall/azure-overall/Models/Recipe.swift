@@ -11,14 +11,17 @@ import Foundation
 // MARK: - Recipe
 struct Recipe: Codable {
     // MARK: Properties
-    private let image: String
+    private let image: String?
     let id: Int
     let title: String
     let readyInMinutes: Int
     let servings: Int
         
     var quantity: Int?
-    var imageUrl: String {
+    var imageUrl: String? {
+        guard let image = image else {
+            return nil
+        }
         return "https://spoonacular.com/recipeImages/\(image)"
     }
     

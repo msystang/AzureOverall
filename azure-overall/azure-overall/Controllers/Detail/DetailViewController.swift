@@ -121,8 +121,13 @@ class DetailViewController: AOViewController {
     }
     
     private func loadImage() {
-        recipeImageView.kf.indicatorType = .activity
-        recipeImageView.kf.setImage(with: URL(string: recipe.imageUrl), placeholder: UIImage(named: AppImages.noPhoto.rawValue))
+        if let imageUrl = recipe.imageUrl {
+            let imgUrl = URL(string: imageUrl)
+            recipeImageView.kf.setImage(with: imgUrl, placeholder: UIImage(named: AppImages.noPhoto.rawValue))
+        } else {
+            recipeImageView.image = UIImage(named: AppImages.noPhoto.rawValue)
+        }
+        
     }
     
     private func isRecipeInCart(for recipeID: Int) -> Bool {

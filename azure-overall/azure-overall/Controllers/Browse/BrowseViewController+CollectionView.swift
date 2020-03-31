@@ -20,12 +20,22 @@ extension BrowseViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifiers.recipeCollectionViewCell.rawValue, for: indexPath) as! RecipeCollectionViewCell
         
         let recipe = recipes[indexPath.row]
-        let imgUrl = URL(string: recipe.imageUrl)
+        
+        
+        cell.recipeImageView.kf.indicatorType = .activity
+        
+        if let imageUrl = recipe.imageUrl {
+            let imgUrl = URL(string: imageUrl)
+            cell.recipeImageView.kf.setImage(with: imgUrl, placeholder: UIImage(named: AppImages.noPhoto.rawValue))
+            
+        } else {
+            cell.recipeImageView.image = UIImage(named: AppImages.noPhoto.rawValue)
+        }
         
         cell.recipeTitleLabel.text = recipe.title
         cell.recipeInfoLabel.text = "\(recipe.servings) servings, \(recipe.readyInMinutes) minutes"
-        cell.recipeImageView.kf.indicatorType = .activity
-        cell.recipeImageView.kf.setImage(with: imgUrl, placeholder: UIImage(named: AppImages.noPhoto.rawValue))
+
+        
         
         
         return cell
