@@ -14,11 +14,13 @@ extension BrowseViewController {
     func addSubviews() {
         view.addSubview(searchBar)
         view.addSubview(recipeCollectionView)
+        recipeCollectionView.addSubview(noRecipeLabel)
     }
     
     func addConstraints() {
         setSearchBarConstraints()
         setRecipeCollectionViewConstraints()
+        setNoRecipeLabelConstraints()
     }
     
     // MARK: - Private Constraint Methods
@@ -41,6 +43,16 @@ extension BrowseViewController {
             recipeCollectionView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
             recipeCollectionView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             recipeCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+    }
+    
+    private func setNoRecipeLabelConstraints() {
+        noRecipeLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            noRecipeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            noRecipeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            noRecipeLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.7)
         ])
     }
     

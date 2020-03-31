@@ -23,6 +23,13 @@ class BrowseViewController: AOViewController {
         return collectionView
     }()
     
+    var noRecipeLabel: AOSubtitleLabel = {
+        let label = AOSubtitleLabel()
+        label.text = "Search for a recipe in the search bar to get started!"
+        label.textAlignment = .center
+        return label
+    }()
+    
     // MARK: - Internal Properties
     var searchString: String? = nil {
         didSet {
@@ -35,6 +42,7 @@ class BrowseViewController: AOViewController {
     
     var recipes = [Recipe]() {
         didSet {
+            toggleNoRecipeLabel()
             recipeCollectionView.reloadData()
         }
     }
@@ -95,6 +103,15 @@ class BrowseViewController: AOViewController {
         collectionView.register(RecipeCollectionViewCell.self, forCellWithReuseIdentifier: CellIdentifiers.recipeCollectionViewCell.rawValue)
         
         collectionView.backgroundColor = .clear
+    }
+    
+    private func toggleNoRecipeLabel() {
+        switch recipes.count == 0 {
+        case true:
+            noRecipeLabel.isHidden = false
+        case false:
+            noRecipeLabel.isHidden = true
+        }
     }
 
 }
