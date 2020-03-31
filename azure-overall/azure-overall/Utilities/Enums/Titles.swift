@@ -26,6 +26,8 @@ enum TextFieldTitle: String {
 enum ButtonTitle: String {
     case signUp = "Sign Me Up"
     case logIn = "Let's Eat"
+    
+    case updateCart = "Update Cart"
 }
 
 enum SearchBarTitle: String {
