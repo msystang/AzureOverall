@@ -27,6 +27,7 @@ class BrowseViewController: AOViewController {
         let label = AOSubtitleLabel()
         label.text = "Search for a recipe in the search bar to get started!"
         label.textAlignment = .center
+        label.textColor = AODesign.teal
         return label
     }()
     

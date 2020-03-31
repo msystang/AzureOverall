@@ -6,4 +6,18 @@
 //  Copyright © 2020 Sunni Tang. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension MenuViewController {
+    // MARK: - Public Constraint Methods
+    func addSubviews() {
+
+    }
+    
+    func addConstraints() {
+
+    }
+    
+    // MARK: - Private Constraint Methods
+    
+}
