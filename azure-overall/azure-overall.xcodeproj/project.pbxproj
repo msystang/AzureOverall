@@ -54,6 +54,7 @@
 		EA5D6BBC24339C8000BEB9B2 /* FieldsDictKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BBB24339C8000BEB9B2 /* FieldsDictKey.swift */; };
 		EA5D6BBE24339E5600BEB9B2 /* AOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BBD24339E5600BEB9B2 /* AOViewController.swift */; };
 		EA5D6BC024339E7500BEB9B2 /* AODesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BBF24339E7500BEB9B2 /* AODesign.swift */; };
+		EA5D6BC22433B7C600BEB9B2 /* AONavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		EA5D6BBB24339C8000BEB9B2 /* FieldsDictKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldsDictKey.swift; sourceTree = "<group>"; };
 		EA5D6BBD24339E5600BEB9B2 /* AOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOViewController.swift; sourceTree = "<group>"; };
 		EA5D6BBF24339E7500BEB9B2 /* AODesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AODesign.swift; sourceTree = "<group>"; };
+		EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AONavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +277,7 @@
 				EA5D6B7E242D570D00BEB9B2 /* RecipeCollectionViewCell */,
 				EA5D6B7F242D573800BEB9B2 /* RecipeTableViewCell */,
 				EA5D6BBD24339E5600BEB9B2 /* AOViewController.swift */,
+				EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				EA5D6BC024339E7500BEB9B2 /* AODesign.swift in Sources */,
 				EA5D6B96242E7C0600BEB9B2 /* RecipeNetworkHelper.swift in Sources */,
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
+				EA5D6BC22433B7C600BEB9B2 /* AONavigationController.swift in Sources */,
 				EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */,
 				EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */,
 				EA5D6BA6243288C300BEB9B2 /* ViewController+Alert.swift in Sources */,
