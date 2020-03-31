@@ -55,6 +55,7 @@
 		EA5D6BBE24339E5600BEB9B2 /* AOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BBD24339E5600BEB9B2 /* AOViewController.swift */; };
 		EA5D6BC024339E7500BEB9B2 /* AODesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BBF24339E7500BEB9B2 /* AODesign.swift */; };
 		EA5D6BC22433B7C600BEB9B2 /* AONavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */; };
+		EA5D6BCA2433C63900BEB9B2 /* AOTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		EA5D6BBD24339E5600BEB9B2 /* AOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOViewController.swift; sourceTree = "<group>"; };
 		EA5D6BBF24339E7500BEB9B2 /* AODesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AODesign.swift; sourceTree = "<group>"; };
 		EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AONavigationController.swift; sourceTree = "<group>"; };
+		EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOTitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 				EA5D6B7F242D573800BEB9B2 /* RecipeTableViewCell */,
 				EA5D6BBD24339E5600BEB9B2 /* AOViewController.swift */,
 				EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */,
+				EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				EA5D6B77242D404600BEB9B2 /* CellIdentifiers.swift in Sources */,
 				EA5D6BC22433B7C600BEB9B2 /* AONavigationController.swift in Sources */,
 				EA5D6B9E243262F700BEB9B2 /* LogInViewController+Constraints.swift in Sources */,
+				EA5D6BCA2433C63900BEB9B2 /* AOTitleLabel.swift in Sources */,
 				EA5D6B83242D578200BEB9B2 /* RecipeTableViewCell.swift in Sources */,
 				EA5D6BA6243288C300BEB9B2 /* ViewController+Alert.swift in Sources */,
 				EA5D6BAF243296FC00BEB9B2 /* AppUser.swift in Sources */,

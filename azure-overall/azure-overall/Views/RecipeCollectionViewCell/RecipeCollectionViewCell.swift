@@ -19,8 +19,8 @@ class RecipeCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    var recipeTitleLabel: UILabel = {
-        let label = UILabel()
+    var recipeTitleLabel: AOTitleLabel = {
+        let label = AOTitleLabel()
         label.textAlignment = .center
         return label
     }()

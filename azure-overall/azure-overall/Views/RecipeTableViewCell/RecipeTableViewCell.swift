@@ -19,8 +19,9 @@ class RecipeTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    var recipeTitleLabel: UILabel = {
-        let label = UILabel()
+    var recipeTitleLabel: AOTitleLabel = {
+        let label = AOTitleLabel()
+        label.textAlignment = .left
         return label
     }()
     
@@ -45,11 +46,11 @@ class RecipeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }
