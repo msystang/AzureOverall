@@ -35,4 +35,12 @@ extension MenuViewController {
         }, completion: nil)
     }
     
+    private func clearCart() {
+        do {
+            try RecipePersistenceHelper.manager.clearCart()
+        } catch {
+            print(error)
+        }
+    }
+    
 }

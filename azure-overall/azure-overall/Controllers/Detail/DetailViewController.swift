@@ -71,7 +71,7 @@ class DetailViewController: AOViewController {
         addSubviews()
         addConstraints()
         
-        setTitle()
+        setUpNavBar()
         loadImage()
     }
     
@@ -107,7 +107,7 @@ class DetailViewController: AOViewController {
     }
     
     // MARK: - Private Methods
-    private func setTitle() {
+    private func setUpNavBar() {
         navigationItem.titleView = titleLabel
     }
     

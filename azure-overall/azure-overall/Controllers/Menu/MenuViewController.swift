@@ -52,13 +52,6 @@ class MenuViewController: AOViewController {
     }
     
     // MARK: - Internal Methods
-    func clearCart() {
-        do {
-            try RecipePersistenceHelper.manager.clearCart()
-        } catch {
-            print(error)
-        }
-    }
     
     // MARK: - Private Methods
     private func setUpNavBar() {
