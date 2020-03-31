@@ -72,24 +72,36 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        loadQuantityLabel()
+        loadQuantity()
+        print(quantityStepper.value)
         
     }
     
     // MARK: - Objc Functions
     @objc private func stepperValueChanged(sender: UIStepper) {
+        print(quantityStepper.value)
         quantityLabel.text = Int(quantityStepper.value).description
     }
     
     @objc private func updateCartButtonPressed() {
+        let recipeID = recipe.id
         recipe.quantity = Int(quantityStepper.value)
         
-        do {
-            try RecipePersistenceHelper.manager.saveRecipe(recipe: recipe)
-            print("Updated Cart!")
-        } catch {
-            print(error.localizedDescription)
-
+        switch isRecipeInCart(for: recipeID) {
+        case false:
+            do {
+                try RecipePersistenceHelper.manager.saveRecipe(recipe: recipe)
+                print("Updated Cart!")
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        case true:
+            do {
+                try RecipePersistenceHelper.manager.editRecipe(with: recipeID, with: recipe)
+            } catch {
+                print(error.localizedDescription)
+            }
         }
         
     }
@@ -100,9 +112,24 @@ class DetailViewController: UIViewController {
         self.navigationItem.title = recipe.title
     }
     
-    private func loadQuantityLabel() {
-//        quantityLabel.text = "\(recipe.quantity ?? 0)"
+    private func loadQuantity() {
         let recipeID = recipe.id
+        
+        switch isRecipeInCart(for: recipeID) {
+        case false:
+            quantityLabel.text = "0"
+        case true:
+            do {
+                recipe = try RecipePersistenceHelper.manager.getRecipe(with: recipeID)
+            } catch {
+                print(error.localizedDescription)
+            }
+            quantityLabel.text = "\(Int(recipe.quantity ?? 0))"
+        }
+        quantityStepper.value = Double(recipe.quantity ?? 0)
+    }
+    
+    private func isRecipeInCart(for recipeID: Int) -> Bool {
         var isInCart = false
         
         do {
@@ -111,19 +138,7 @@ class DetailViewController: UIViewController {
             print(error.localizedDescription)
         }
         
-        switch isInCart {
-        case false:
-            quantityLabel.text = "0"
-        case true:
-            do {
-                recipe = try RecipePersistenceHelper.manager.getRecipe(with: recipeID)
-                quantityLabel.text = "\(Int(recipe.quantity ?? 0))"
-            } catch {
-                print(error.localizedDescription)
-            }
-            
-        }
-        
+        return isInCart
     }
     
     private func loadImage() {
