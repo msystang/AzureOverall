@@ -9,10 +9,12 @@
 import UIKit
 
 struct AODesign {
+    // MARK: Colors
     static let azure = #colorLiteral(red: 0, green: 0.4980392157, blue: 1, alpha: 1)
     static let white = UIColor.white
     static let black = UIColor.black
     
+    // MARK: Font
     enum fontSize: CGFloat {
         case small = 15
         case med = 20
@@ -25,5 +27,7 @@ struct AODesign {
         case bold = "KohinoorBangla-Semibold"
     }
     
+    // MARK: Size
+    static let tableViewHeight: CGFloat = 150
 
 }
