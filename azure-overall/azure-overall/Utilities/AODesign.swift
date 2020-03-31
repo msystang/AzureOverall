@@ -31,5 +31,6 @@ struct AODesign {
     
     // MARK: Size
     static let tableViewHeight: CGFloat = 150
+    static let tableViewImageHeight: CGFloat = 120
 
 }

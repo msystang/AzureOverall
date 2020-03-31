@@ -28,10 +28,10 @@ extension RecipeTableViewCell {
         recipeImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            recipeImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
-            recipeImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10),
-            recipeImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
-            recipeImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.4)
+            recipeImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 15),
+            recipeImageView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 20),
+            recipeImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -15),
+            recipeImageView.widthAnchor.constraint(equalTo: recipeImageView.heightAnchor)
         ])
     }
     

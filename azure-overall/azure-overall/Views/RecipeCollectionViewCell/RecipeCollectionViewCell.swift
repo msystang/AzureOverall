@@ -41,6 +41,7 @@ class RecipeCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Private Methods
     private func setUpImageView(imageView: UIImageView) {
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true

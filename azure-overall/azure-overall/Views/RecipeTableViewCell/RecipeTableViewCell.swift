@@ -11,11 +11,9 @@ import UIKit
 class RecipeTableViewCell: UITableViewCell {
     
     // MARK: - UI Objects
-    var recipeImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.backgroundColor = .purple
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
+    lazy var recipeImageView: UIImageView = {
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: AODesign.tableViewImageHeight, height: AODesign.tableViewImageHeight))
+        setUpImageView(imageView: imageView)
         return imageView
     }()
     
@@ -46,4 +44,12 @@ class RecipeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    // MARK: - Private Methods
+    private func setUpImageView(imageView: UIImageView) {
+        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = imageView.bounds.width / 2
+        imageView.layer.borderWidth = 3
+        imageView.layer.borderColor = AODesign.teal.cgColor
+    }
 }
