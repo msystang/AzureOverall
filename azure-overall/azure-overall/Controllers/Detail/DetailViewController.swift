@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
     
     lazy var quantityTitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Quantity"
+        label.text = LabelTitles.quantity.rawValue
         return label
     }()
     
@@ -50,7 +50,7 @@ class DetailViewController: UIViewController {
     
     lazy var updateCartButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Update Cart", for: .normal)
+        button.setTitle(ButtonTitle.updateCart.rawValue, for: .normal)
         button.showsTouchWhenHighlighted = true
         button.backgroundColor = .red
         button.addTarget(self, action: #selector(updateCartButtonPressed), for: .touchUpInside)
