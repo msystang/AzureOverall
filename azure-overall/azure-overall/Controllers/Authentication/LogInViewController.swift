@@ -76,7 +76,7 @@ class LogInViewController: UIViewController {
     // MARK: - Private Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = AODesign.aoAzure
+        view.backgroundColor = AODesign.azure
         
         addSubviews()
         addConstraints()
