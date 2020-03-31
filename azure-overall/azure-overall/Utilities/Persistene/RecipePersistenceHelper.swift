@@ -8,6 +8,10 @@
 
 import Foundation
 
+fileprivate enum FileName: String {
+    case recipe = "Recipe.plist"
+}
+
 struct RecipePersistenceHelper {
     // MARK: - Internal Properties
     static let manager = RecipePersistenceHelper()
@@ -63,7 +67,7 @@ struct RecipePersistenceHelper {
     }
     
     // MARK: - Private Properties
-    private let persistenceManager = PersistenceManager<Recipe>(fileName: "Recipe.plist")
+    private let persistenceManager = PersistenceManager<Recipe>(fileName: FileName.recipe.rawValue)
     
     // MARK: - Private Initializers
     private init() {}
