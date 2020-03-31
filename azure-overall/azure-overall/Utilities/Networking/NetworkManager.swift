@@ -8,6 +8,11 @@
 
 import Foundation
 
+fileprivate enum RequestHeader: String {
+    case type = "application/json"
+    case field = "Content-Type"
+}
+
 class NetworkManager {
     
     // MARK: - Singleton
@@ -23,7 +28,7 @@ class NetworkManager {
         // Set the body (message) for the request as Data, if any
         urlRequest.httpBody = hTTPBody
         // Set the request headers
-        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        urlRequest.addValue(RequestHeader.type.rawValue, forHTTPHeaderField: RequestHeader.field.rawValue)
         
         urlSession.dataTask(with: urlRequest) { (data, response, error) in
             // Dispatches data task asynchronously on the main thread
