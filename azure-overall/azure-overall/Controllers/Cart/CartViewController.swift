@@ -17,6 +17,12 @@ class CartViewController: AOViewController {
         return tableView
     }()
     
+    lazy var clearCartButton: UIBarButtonItem = {
+        let clearCartImage: UIImage? = UIImage(systemName: SystemImages.clearCart.rawValue)
+        let barButton = UIBarButtonItem(image: clearCartImage, style: .plain, target: self, action: #selector(clearCartButtonPressed))
+        return barButton
+    }()
+    
     // MARK: - Internal Properties
     var recipes = [Recipe]() {
         didSet{
@@ -31,7 +37,7 @@ class CartViewController: AOViewController {
         addSubviews()
         addConstraints()
         
-        setTitle()
+        setUpNavBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,9 +45,17 @@ class CartViewController: AOViewController {
         loadCart()
     }
     
+    // MARK: - Objc Methods
+    @objc private func clearCartButtonPressed() {
+        actionAlert(title: "Are you sure?", message: "You will lose all items in your cart.", actionTitle: "Clear") { (action) in
+            self.clearCart()
+        }
+    }
+    
     // MARK: - Private Methods
-    private func setTitle() {
+    private func setUpNavBar() {
         self.navigationItem.title = NavBarTitle.cart.rawValue
+        navigationItem.rightBarButtonItem = clearCartButton
     }
     
     private func loadCart() {
@@ -59,5 +73,15 @@ class CartViewController: AOViewController {
         
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
+    }
+    
+    private func clearCart() {
+        do {
+            try RecipePersistenceHelper.manager.clearCart()
+        } catch {
+            print(error)
+        }
+        
+        loadCart()
     }
 }

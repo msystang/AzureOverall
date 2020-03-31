@@ -15,6 +15,7 @@ enum SystemImages: String {
     case cart
     case menu = "list.bullet"
     case logOut = "person.crop.circle.fill.badge.xmark"
+    case clearCart = "bin.xmark"
 }
 
 // MARK: - AppImages
