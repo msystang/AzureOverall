@@ -21,7 +21,6 @@ class DetailViewController: AOViewController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.backgroundColor = .yellow
         return imageView
     }()
     
@@ -50,6 +49,7 @@ class DetailViewController: AOViewController {
     lazy var quantityStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [quantityLabel, quantityStepper])
         stackView.alignment = .center
+        stackView.distribution = .equalSpacing
         stackView.axis = .horizontal
         return stackView
     }()

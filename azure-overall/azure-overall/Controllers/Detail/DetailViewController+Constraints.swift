@@ -56,7 +56,7 @@ extension DetailViewController {
         quantityStackView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            quantityStackView.topAnchor.constraint(equalTo: quantityTitleLabel.bottomAnchor, constant: 10),
+            quantityStackView.topAnchor.constraint(equalTo: quantityTitleLabel.bottomAnchor, constant: 5),
             quantityStackView.centerXAnchor.constraint(equalTo: recipeImageView.centerXAnchor),
             quantityStackView.widthAnchor.constraint(equalTo: recipeImageView.widthAnchor, multiplier: 0.8),
             quantityStackView.heightAnchor.constraint(equalToConstant: 30)
@@ -70,7 +70,7 @@ extension DetailViewController {
             updateCartButton.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
             updateCartButton.widthAnchor.constraint(equalToConstant: 120),
             updateCartButton.heightAnchor.constraint(equalToConstant: 40),
-            updateCartButton.topAnchor.constraint(equalTo: quantityStackView.bottomAnchor, constant: 40)
+            updateCartButton.topAnchor.constraint(equalTo: quantityStackView.bottomAnchor, constant: 50)
         ])
     }
     
