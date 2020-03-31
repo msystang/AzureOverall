@@ -14,7 +14,12 @@ class RecipeNetworkHelper {
     static let manager = RecipeNetworkHelper()
     
     // MARK: - Instance Methods
-    static func getUrlStr(from searchString: String, searchCount: Int) -> String {
+    static func getUrlStr(from searchString: String, searchCount: Int?) -> String {
+        
+        guard let searchCount = searchCount else {
+            return "https://api.spoonacular.com/recipes/search?query=\(searchString)&apiKey=\(Secrets.spoonacularKey)"
+        }
+        
         return "https://api.spoonacular.com/recipes/search?query=\(searchString)&number=\(searchCount)&apiKey=\(Secrets.spoonacularKey)"
     }
     

@@ -39,7 +39,7 @@ class BrowseViewController: AOViewController {
     }
     
     // TODO: Can use based on user preference
-    var searchCount: Int = 20
+    var searchCount: Int? = nil
     
     var recipes = [Recipe]() {
         didSet {
@@ -71,7 +71,7 @@ class BrowseViewController: AOViewController {
     
     private func loadRecipes() {
         // TODO: Update searchCount
-        let urlStr = RecipeNetworkHelper.getUrlStr(from: searchString ?? "", searchCount: 7)
+        let urlStr = RecipeNetworkHelper.getUrlStr(from: searchString ?? "", searchCount: searchCount)
         
         RecipeNetworkHelper.manager.getRecipes(from: urlStr) { (result) in
             // Dispatches data task asynchronously on the main thread
