@@ -39,10 +39,9 @@ extension RecipeTableViewCell {
         recipeTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            recipeTitleLabel.topAnchor.constraint(equalTo: recipeImageView.topAnchor),
-            recipeTitleLabel.leftAnchor.constraint(equalTo: recipeImageView.rightAnchor, constant: 5),
-            recipeTitleLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 10),
-            recipeTitleLabel.heightAnchor.constraint(equalTo: recipeImageView.heightAnchor, multiplier: 0.6)
+            recipeTitleLabel.leftAnchor.constraint(equalTo: recipeImageView.rightAnchor, constant: 15),
+            recipeTitleLabel.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15),
+            recipeTitleLabel.bottomAnchor.constraint(equalTo: self.centerYAnchor, constant: -5)
         ])
     }
     
@@ -50,10 +49,9 @@ extension RecipeTableViewCell {
         quantityLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            quantityLabel.topAnchor.constraint(equalTo: recipeTitleLabel.bottomAnchor),
+            quantityLabel.topAnchor.constraint(equalTo: self.centerYAnchor, constant: 5),
             quantityLabel.leadingAnchor.constraint(equalTo: recipeTitleLabel.leadingAnchor),
-            quantityLabel.rightAnchor.constraint(equalTo: recipeTitleLabel.rightAnchor),
-            quantityLabel.bottomAnchor.constraint(equalTo: recipeImageView.bottomAnchor)
+            quantityLabel.rightAnchor.constraint(equalTo: recipeTitleLabel.rightAnchor)
         ])
     }
     
