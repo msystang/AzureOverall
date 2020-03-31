@@ -29,6 +29,42 @@ struct RecipePersistenceHelper {
         try persistenceManager.edit(objectWith: tag, newObject: newObject)
     }
     
+    func isInCart(recipeID: Int) throws -> Bool {
+        var recipes = [Recipe]()
+        
+        do {
+            recipes = try getRecipes()
+        } catch {
+            throw PersistenceError.other(rawError: error)
+        }
+        
+        let recipeIDs = recipes.map { $0.id }
+        
+        return recipeIDs.contains(recipeID)
+    }
+    
+    func getRecipe(with id: Int) throws -> Recipe? {
+        var recipes = [Recipe]()
+        
+        do {
+            recipes = try getRecipes()
+        } catch {
+            throw PersistenceError.other(rawError: error)
+        }
+        
+        let recipesWithId = recipes.filter { $0.id == id }
+        
+        guard let firstRecipe = recipesWithId.first else {
+            throw PersistenceError.noRecipeWithGivenIdInCart
+        }
+        
+        guard recipesWithId.count == 1 else {
+            throw PersistenceError.multipleEntriesWithSameIdInCart
+        }
+        
+        return firstRecipe
+    }
+    
     // MARK: - Private Properties
     private let persistenceManager = PersistenceManager<Recipe>(fileName: "Recipe.plist")
     
