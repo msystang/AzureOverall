@@ -22,14 +22,12 @@ class RecipeCollectionViewCell: UICollectionViewCell {
     var recipeTitleLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.text = "Title"
         return label
     }()
     
     var recipeInfoLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.text = "Info"
         return label
     }()
     

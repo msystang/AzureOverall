@@ -21,13 +21,11 @@ class RecipeTableViewCell: UITableViewCell {
     
     var recipeTitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Title"
         return label
     }()
     
     var quantityLabel: UILabel = {
         let label = UILabel()
-        label.text = "Quantity"
         return label
     }()
     
