@@ -31,7 +31,7 @@ extension RecipeCollectionViewCell {
             recipeImageView.topAnchor.constraint(equalTo: self.topAnchor),
             recipeImageView.leftAnchor.constraint(equalTo: self.leftAnchor),
             recipeImageView.rightAnchor.constraint(equalTo: self.rightAnchor),
-            recipeImageView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.5)
+            recipeImageView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.7)
         ])
     }
     
