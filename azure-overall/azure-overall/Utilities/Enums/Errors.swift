@@ -27,4 +27,8 @@ enum NetworkingError: Error {
 enum PersistenceError: Error {
     case noDataFromUrlPath
     case couldNotDecodeFromUrlPath
+    
+    case noRecipeWithGivenIdInCart
+    case multipleEntriesWithSameIdInCart
+    case other(rawError: Error)
 }
