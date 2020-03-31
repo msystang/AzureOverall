@@ -15,7 +15,7 @@ class BrowseViewController: UIViewController {
         let searchBar = UISearchBar()
         searchBar.searchBarStyle = .minimal
         searchBar.delegate = self
-        searchBar.placeholder = "What are you in the mood for today?"
+        searchBar.placeholder = SearchBarTitle.placeholder.rawValue
         return searchBar
     }()
     
@@ -64,7 +64,7 @@ class BrowseViewController: UIViewController {
     
     // MARK: - Internal Methods
     private func setTitle() {
-        self.navigationItem.title = "Browse Recipes"
+        self.navigationItem.title = NavBarTitle.browse.rawValue
     }
     
     private func loadRecipes() {

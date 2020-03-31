@@ -14,7 +14,7 @@ class LogInViewController: UIViewController {
     // MARK: - UI Objects
     var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Azure Overall"
+        label.text = AppTitle.azureOverall.rawValue
         label.textAlignment = .center
         return label
     }()
