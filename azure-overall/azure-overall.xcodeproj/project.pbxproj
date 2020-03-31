@@ -215,7 +215,7 @@
 		EA5D6B58242D151100BEB9B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				EA5D6B62242D2C5600BEB9B2 /* Authentication */,
+				EA5D6B9F243283F200BEB9B2 /* Authentication */,
 				EA5D6B89242E5B5200BEB9B2 /* Main */,
 				EA5D6B5F242D20E400BEB9B2 /* Browse */,
 				EA5D6B60242D20F200BEB9B2 /* Cart */,
@@ -253,14 +253,6 @@
 				EA5D6B97243237D300BEB9B2 /* DetailViewController+Constraints.swift */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		EA5D6B62242D2C5600BEB9B2 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				EA5D6B9F243283F200BEB9B2 /* Log In */,
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		EA5D6B69242D2CBB00BEB9B2 /* Settings */ = {
@@ -345,7 +337,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EA5D6B9F243283F200BEB9B2 /* Log In */ = {
+		EA5D6B9F243283F200BEB9B2 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				EA5D6B63242D2C6C00BEB9B2 /* LogInViewController.swift */,
@@ -354,7 +346,7 @@
 				EA5D6BA12432842E00BEB9B2 /* LogInViewController+TextField.swift */,
 				EA5D6B9D243262F700BEB9B2 /* LogInViewController+Constraints.swift */,
 			);
-			path = "Log In";
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		EA5D6BA32432883300BEB9B2 /* Utilities */ = {
