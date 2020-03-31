@@ -41,6 +41,12 @@ struct PersistenceManager<T: Codable> {
         try serializedData.write(to: url, options: Data.WritingOptions.atomic)
     }
     
+    func deleteAllObjects() throws {
+        let elements = [T]()
+        let serializedData = try PropertyListEncoder().encode(elements)
+        try serializedData.write(to: url, options: Data.WritingOptions.atomic)
+    }
+    
     // MARK: - Initializers
     init(fileName: String) {
         self.fileName = fileName

@@ -66,6 +66,10 @@ struct RecipePersistenceHelper {
         return firstRecipe
     }
     
+    func clearCart() throws {
+        try persistenceManager.deleteAllObjects()
+    }
+    
     // MARK: - Private Properties
     private let persistenceManager = PersistenceManager<Recipe>(fileName: FileName.recipe.rawValue)
     
