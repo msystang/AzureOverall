@@ -86,7 +86,7 @@ class BrowseViewController: AOViewController {
         
         searchBar.searchTextField.font = UIFont(name: AODesign.fontName.light.rawValue, size: AODesign.fontSize.med.rawValue)
         searchBar.searchTextField.textColor = AODesign.black
-        searchBar.tintColor = AODesign.azure
+        searchBar.tintColor = AODesign.teal
     }
     
     private func setUpCollectionView(collectionView: UICollectionView) {

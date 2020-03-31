@@ -14,6 +14,7 @@ struct AODesign {
     static let white = UIColor.white
     static let black = UIColor.black
     static let gray = UIColor.darkGray
+    static let teal = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
     
     // MARK: Font
     enum fontSize: CGFloat {

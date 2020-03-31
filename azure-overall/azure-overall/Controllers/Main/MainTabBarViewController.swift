@@ -35,7 +35,7 @@ class MainTabBarViewController: UITabBarController {
     
     private func styleTabBar() {
         tabBar.barTintColor = AODesign.azure
-        tabBar.tintColor = AODesign.white
+        tabBar.tintColor = AODesign.teal
         tabBar.unselectedItemTintColor = AODesign.gray
     }
 }

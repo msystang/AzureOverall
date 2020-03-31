@@ -17,7 +17,8 @@ class AOButton: UIButton {
         self.titleLabel?.font = UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.med.rawValue)
         self.showsTouchWhenHighlighted = true
         self.layer.cornerRadius = 5
-        self.layer.borderColor = AODesign.azure.cgColor
+//        self.layer.borderColor = AODesign.teal.cgColor
+//        self.layer.borderWidth = 2
         
     }
     
