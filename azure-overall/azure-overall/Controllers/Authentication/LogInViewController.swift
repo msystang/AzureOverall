@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class LogInViewController: AOViewController {
+class LogInViewController: UIViewController {
     
     // MARK: - UI Objects
     var titleLabel: UILabel = {
@@ -76,6 +76,7 @@ class LogInViewController: AOViewController {
     // MARK: - Private Functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = AODesign.aoAzure
         
         addSubviews()
         addConstraints()
