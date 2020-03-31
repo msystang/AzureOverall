@@ -10,6 +10,7 @@ import Foundation
 import FirebaseAuth
 
 class FirebaseAuthService {
+    
     // MARK: - Internal Properties
     static let manager = FirebaseAuthService()
     

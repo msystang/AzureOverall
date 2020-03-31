@@ -15,6 +15,7 @@ fileprivate enum FireStoreCollections: String {
 }
 
 class FirestoreService {
+    
     //MARK: - Static Properties
     static let manager = FirestoreService()
     

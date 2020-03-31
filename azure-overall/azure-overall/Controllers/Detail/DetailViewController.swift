@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
     // MARK: - UI Objects
+    
+    //TODO: Create titleLabel and add to nav bar title view
     var recipeImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -73,7 +75,6 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadQuantity()
-        
     }
     
     // MARK: - Objc Functions
@@ -100,7 +101,6 @@ class DetailViewController: UIViewController {
                 print(error.localizedDescription)
             }
         }
-        
     }
     
     // MARK: - Private Methods
@@ -142,6 +142,4 @@ class DetailViewController: UIViewController {
         }
         quantityStepper.value = Double(recipe.quantity ?? 0)
     }
-
-    
 }

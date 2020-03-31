@@ -9,6 +9,7 @@
 import UIKit
 
 extension DetailViewController {
+    
     // MARK: - Public Constraint Methods
     func addSubviews() {
         view.addSubview(recipeImageView)

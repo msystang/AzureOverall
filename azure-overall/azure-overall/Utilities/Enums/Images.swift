@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - SystemImages
 enum SystemImages: String {
     case gear
     case magnifyingGlass = "magnifyingglass.circle"
@@ -15,6 +16,7 @@ enum SystemImages: String {
     case person
 }
 
+// MARK: - AppImages
 enum AppImages: String {
     case noPhoto = "no-photo"
     case logo

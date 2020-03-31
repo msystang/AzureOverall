@@ -9,7 +9,7 @@
 import UIKit
 
 extension CartViewController {
-    
+
     // MARK: - Public Constraint Methods
     func addSubviews() {
         view.addSubview(recipeTableView)

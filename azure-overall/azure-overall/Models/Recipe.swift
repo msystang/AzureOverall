@@ -8,8 +8,9 @@
 
 import Foundation
 
+// MARK: - Recipe
 struct Recipe: Codable {
-    // MARK: - Properties
+    // MARK: Properties
     private let image: String
     let id: Int
     let title: String
@@ -21,7 +22,7 @@ struct Recipe: Codable {
         return "https://spoonacular.com/recipeImages/\(image)"
     }
     
-    // MARK: - Internal Methods
+    // MARK: Internal Methods
     static func decodeFromData(from jsonData: Data) throws -> [Recipe] {
         let decodeResponse = try JSONDecoder().decode(RecipeWrapper.self, from: jsonData)
         return decodeResponse.results
@@ -29,6 +30,7 @@ struct Recipe: Codable {
     
 }
 
+// MARK: - RecipeWrapper
 struct RecipeWrapper: Codable {
     let results: [Recipe]
 }

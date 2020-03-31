@@ -15,7 +15,6 @@ class BrowseViewController: UIViewController {
         let searchBar = UISearchBar()
         searchBar.searchBarStyle = .minimal
         searchBar.delegate = self
-        // TODO: Randomize phrases?
         searchBar.placeholder = "What are you in the mood for today?"
         return searchBar
     }()
@@ -29,12 +28,6 @@ class BrowseViewController: UIViewController {
         return collectionView
     }()
     
-    // TODO: Detetmine where to put Settings, change to menu?
-    //    lazy var settingsButton: UIBarButtonItem = {
-    //        let button = UIBarButtonItem(image: UIImage(systemName: SystemImages.gear.rawValue), style: .plain, target: self, action: #selector(settingsButtonPressed))
-    //        return button
-    //    }()
-    
     // MARK: - Internal Properties
     var searchString: String? = nil {
         didSet {
@@ -42,6 +35,7 @@ class BrowseViewController: UIViewController {
         }
     }
     
+    // TODO: Can use based on user preference
     var searchCount: Int = 20
     
     var recipes = [Recipe]() {
@@ -60,12 +54,13 @@ class BrowseViewController: UIViewController {
         addConstraints()
         
         setTitle()
+        
     }
     
-    // MARK: - Objc Methods
-    //    @objc func settingsButtonPressed() {
-    //
-    //    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
     
     // MARK: - Internal Methods
     private func setTitle() {
@@ -89,6 +84,5 @@ class BrowseViewController: UIViewController {
             }
         }
     }
-    
 }
 

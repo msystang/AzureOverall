@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - Search Bar Delegate Methods
 extension BrowseViewController: UISearchBarDelegate {
     
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {

@@ -9,7 +9,7 @@
 import UIKit
 
 extension BrowseViewController {
-    
+
     // MARK: - Public Constraint Methods
     func addSubviews() {
         view.addSubview(searchBar)

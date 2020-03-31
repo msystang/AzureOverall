@@ -25,13 +25,9 @@ struct RecipePersistenceHelper {
         try persistenceManager.delete(objectWith: tag)
     }
     
-//    func editRecipe(at tag: Int, with newObject: Recipe) throws {
-//        try persistenceManager.edit(objectWith: tag, newObject: newObject)
-//    }
-    
     func editRecipe(with id: Int, with newObject: Recipe) throws {
         let recipes = try getRecipes()
-        
+
         guard let tag = (recipes.firstIndex { $0.id == id }) else {
             throw PersistenceError.couldNotGetTagToEditRecipe
         }
@@ -46,7 +42,6 @@ struct RecipePersistenceHelper {
     
     func isInCart(recipeID: Int) throws -> Bool {
         let recipes = try getRecipes()
-
         let recipeIDs = recipes.map { $0.id }
         
         return recipeIDs.contains(recipeID)
@@ -54,7 +49,6 @@ struct RecipePersistenceHelper {
     
     func getRecipe(with id: Int) throws -> Recipe? {
         let recipes = try getRecipes()
-        
         let recipesWithId = recipes.filter { $0.id == id }
         
         guard let firstRecipe = recipesWithId.first else {

@@ -9,6 +9,7 @@
 import Foundation
 
 class RecipeNetworkHelper {
+    
     // MARK: - Singleton
     static let manager = RecipeNetworkHelper()
     
@@ -39,7 +40,6 @@ class RecipeNetworkHelper {
                 }
             }
         }
-        
     }
     
     // MARK: - Private Properties and Initializers

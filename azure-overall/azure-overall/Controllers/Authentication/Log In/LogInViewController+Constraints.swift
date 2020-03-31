@@ -9,7 +9,6 @@
 import UIKit
 
 extension LogInViewController {
-    
     // MARK: - Public Constraint Methods
     func addSubviews() {
         view.addSubview(titleLabel)

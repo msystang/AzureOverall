@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 
+// MARK: - CollectionView Data Source Methods
 extension BrowseViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -32,6 +33,7 @@ extension BrowseViewController: UICollectionViewDataSource {
     
 }
 
+// MARK: - CollectionView Delegate Methods
 extension BrowseViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -49,12 +49,10 @@ class CartViewController: UIViewController {
     }
     
     private func loadCart() {
-        
         do {
             recipes = try RecipePersistenceHelper.manager.getRecipes()
         } catch {
             print(error.localizedDescription)
         }
     }
-    
 }

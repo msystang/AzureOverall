@@ -11,30 +11,34 @@ import FirebaseFirestore
 import FirebaseAuth
 
 struct AppUser {
+    // MARK: Properties
     let email: String?
     let uid: String
     let dateCreated: Date?
     
-    //Instatiating to 'encode' to Firestore
+    var fieldsDict: [String: Any] {
+        return [
+            "email": self.email ?? ""
+        ]
+    }
+    
+    // MARK: Initializations
+    // Init to 'encode' to Firestore (creating AppUser object in Firestore from user in FirebaseAuth)
     init(from user: User) {
         self.email = user.email
         self.uid = user.uid
         self.dateCreated = user.metadata.creationDate
     }
     
-    //Instatiating when 'decoding' from Firestore
+    // Failing init when 'decoding' from Firestore (getting AppUser object from Firestore)
     init?(from dict: [String: Any], id: String) {
         guard let email = dict["email"] as? String,
-            let dateCreated = (dict["dateCreated"] as? Timestamp)?.dateValue() else { return nil }
+            let dateCreated = (dict["dateCreated"] as? Timestamp)?.dateValue() else {
+                return nil
+        }
         
         self.uid = id
         self.email = email
         self.dateCreated = dateCreated
-    }
-    
-    var fieldsDict: [String: Any] {
-        return [
-            "email": self.email ?? ""
-        ]
     }
 }

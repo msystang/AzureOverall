@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 
 class LogInViewController: UIViewController {
+    
     // MARK: - UI Objects
     var titleLabel: UILabel = {
         let label = UILabel()

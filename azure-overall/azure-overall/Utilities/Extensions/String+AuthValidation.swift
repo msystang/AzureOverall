@@ -8,7 +8,10 @@
 
 import Foundation
 
+// MARK: - String Extensions
 extension String {
+    
+    // MARK: Authentication Verification
     var isValidEmail: Bool {
         let validEmailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", validEmailRegEx)

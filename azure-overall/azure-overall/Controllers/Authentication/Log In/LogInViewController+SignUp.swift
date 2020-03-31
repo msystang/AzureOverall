@@ -10,7 +10,9 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
+// MARK: - Sign Up Methods
 extension LogInViewController {
+    
     func attemptSignUp(email: String, password: String) {
         FirebaseAuthService.manager.signUpUser(email: email, password: password) { (result) in
             self.handleSignUpResponse(with: result)
@@ -39,5 +41,4 @@ extension LogInViewController {
             enableButtons()
         }
     }
-
 }

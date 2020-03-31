@@ -8,10 +8,12 @@
 
 import Foundation
 
+// MARK: - AppError
 enum AppError: Error {
     
 }
 
+// MARK: - NetworkingError
 enum NetworkingError: Error {
     // NetworkingManager Errors
     case noDataReceived
@@ -24,6 +26,7 @@ enum NetworkingError: Error {
     case couldNotParseJSON(rawError: Error)
 }
 
+// MARK: - PersistenceError
 enum PersistenceError: Error {
     case noDataFromUrlPath
     case couldNotDecodeFromUrlPath

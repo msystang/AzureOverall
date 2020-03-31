@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - TableView Data Source Methods
 extension CartViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,19 +32,19 @@ extension CartViewController: UITableViewDataSource {
     
 }
 
+// MARK: - TableView Delegate Methods
 extension CartViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO: Guard that there is a recipe, else showAlert
         let recipe = recipes[indexPath.row]
         
         let detailVC = DetailViewController()
         detailVC.recipe = recipe
         
         self.navigationController?.pushViewController(detailVC, animated: true)
-        
     }
 }

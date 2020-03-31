@@ -8,7 +8,9 @@
 
 import UIKit
 
+// MARK: - TextField Delegate Methods
 extension LogInViewController: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

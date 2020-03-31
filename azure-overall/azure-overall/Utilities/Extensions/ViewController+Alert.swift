@@ -8,7 +8,10 @@
 
 import UIKit
 
+// MARK: - ViewController Extensions
 extension UIViewController {
+    
+    // MARK: showAlert
     func showAlert(title: String?, message: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title:"OK", style: .default) { alert in }
