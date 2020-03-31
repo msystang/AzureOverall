@@ -19,6 +19,7 @@ class SettingsViewController: UIViewController {
     
     lazy var logOutButton: UIButton = {
         let button = UIButton()
+        button.setTitle(ButtonTitle.logOut.rawValue, for: .normal)
         return button
     }()
     
