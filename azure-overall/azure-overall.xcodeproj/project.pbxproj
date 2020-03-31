@@ -60,6 +60,7 @@
 		EA5D6BCE2433CEA800BEB9B2 /* AOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */; };
 		EA5D6BD02433D36E00BEB9B2 /* AOTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCF2433D36E00BEB9B2 /* AOTextField.swift */; };
 		EA5D6BD22433E24900BEB9B2 /* MenuViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BD12433E24800BEB9B2 /* MenuViewController+Constraints.swift */; };
+		EA5D6BD42433E98D00BEB9B2 /* MenuViewController+LogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BD32433E98D00BEB9B2 /* MenuViewController+LogOut.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +135,7 @@
 		EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOButton.swift; sourceTree = "<group>"; };
 		EA5D6BCF2433D36E00BEB9B2 /* AOTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOTextField.swift; sourceTree = "<group>"; };
 		EA5D6BD12433E24800BEB9B2 /* MenuViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+Constraints.swift"; sourceTree = "<group>"; };
+		EA5D6BD32433E98D00BEB9B2 /* MenuViewController+LogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuViewController+LogOut.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5D6B67242D2CB700BEB9B2 /* MenuViewController.swift */,
+				EA5D6BD32433E98D00BEB9B2 /* MenuViewController+LogOut.swift */,
 				EA5D6BD12433E24800BEB9B2 /* MenuViewController+Constraints.swift */,
 			);
 			path = Menu;
@@ -602,6 +605,7 @@
 				EA5D6B88242E553B00BEB9B2 /* Images.swift in Sources */,
 				EA5D6B6F242D367D00BEB9B2 /* BrowseViewController+Constraints.swift in Sources */,
 				EA5D6BBA243394D800BEB9B2 /* Titles.swift in Sources */,
+				EA5D6BD42433E98D00BEB9B2 /* MenuViewController+LogOut.swift in Sources */,
 				EA5D6BBC24339C8000BEB9B2 /* FieldsDictKey.swift in Sources */,
 				EA5D6B79242D467300BEB9B2 /* RecipeCollectionViewCell+Constraints.swift in Sources */,
 				EA5D6B7D242D552100BEB9B2 /* CartViewController+Constraints.swift in Sources */,
