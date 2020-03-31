@@ -29,28 +29,22 @@ struct RecipePersistenceHelper {
         try persistenceManager.edit(objectWith: tag, newObject: newObject)
     }
     
+//    func editRecipe(with id: Int, with newObject: Recipe) throws {
+//
+//
+//        try persistenceManager.edit(objectWith: tag, newObject: newObject)
+//    }
+    
     func isInCart(recipeID: Int) throws -> Bool {
-        var recipes = [Recipe]()
-        
-        do {
-            recipes = try getRecipes()
-        } catch {
-            throw PersistenceError.other(rawError: error)
-        }
-        
+        let recipes = try getRecipes()
+
         let recipeIDs = recipes.map { $0.id }
         
         return recipeIDs.contains(recipeID)
     }
     
     func getRecipe(with id: Int) throws -> Recipe? {
-        var recipes = [Recipe]()
-        
-        do {
-            recipes = try getRecipes()
-        } catch {
-            throw PersistenceError.other(rawError: error)
-        }
+        let recipes = try getRecipes()
         
         let recipesWithId = recipes.filter { $0.id == id }
         
