@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+enum TabBarTitles: String {
+    case browse = "Browse"
+    case cart = "My Cart"
+    case settings = "Settings"
+}
