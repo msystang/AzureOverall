@@ -23,9 +23,18 @@ class CartViewController: AOViewController {
         return barButton
     }()
     
+    var noRecipeLabel: AOSubtitleLabel = {
+        let label = AOSubtitleLabel()
+        label.text = "Currently no items in your cart :("
+        label.textAlignment = .center
+        label.textColor = AODesign.teal
+        return label
+    }()
+    
     // MARK: - Internal Properties
     var recipes = [Recipe]() {
         didSet{
+            toggleNoRecipeLabel()
             recipeTableView.reloadData()
         }
     }
@@ -83,5 +92,14 @@ class CartViewController: AOViewController {
         }
         
         loadCart()
+    }
+    
+    private func toggleNoRecipeLabel() {
+        switch recipes.count == 0 {
+        case true:
+            noRecipeLabel.isHidden = false
+        case false:
+            noRecipeLabel.isHidden = true
+        }
     }
 }

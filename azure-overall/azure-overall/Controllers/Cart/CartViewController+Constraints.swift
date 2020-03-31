@@ -13,10 +13,12 @@ extension CartViewController {
     // MARK: - Public Constraint Methods
     func addSubviews() {
         view.addSubview(recipeTableView)
+        recipeTableView.addSubview(noRecipeLabel)
     }
     
     func addConstraints() {
         setRecipeTableViewConstraints()
+        setNoRecipeLabelConstraints()
     }
     
     // MARK: - Private Constraint Methods
@@ -28,6 +30,16 @@ extension CartViewController {
             recipeTableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
             recipeTableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             recipeTableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+    }
+    
+    private func setNoRecipeLabelConstraints() {
+        noRecipeLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            noRecipeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            noRecipeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            noRecipeLabel.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.7)
         ])
     }
 }
