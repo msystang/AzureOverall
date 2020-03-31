@@ -8,23 +8,20 @@
 
 import UIKit
 
-class AONavigationViewController: UIViewController {
+class AONavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        styleNavBar()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func styleNavBar() {
+        navigationBar.tintColor = AODesign.black
+        navigationBar.barTintColor = AODesign.azure
+        let textAttributes = [
+            NSAttributedString.Key.foregroundColor : AODesign.white,
+            NSAttributedString.Key.font : UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.med.rawValue)!] as [NSAttributedString.Key : Any]
+        navigationBar.titleTextAttributes = textAttributes
     }
-    */
-
 }
