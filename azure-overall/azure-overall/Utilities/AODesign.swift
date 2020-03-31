@@ -14,7 +14,7 @@ struct AODesign {
     static let black = UIColor.black
     
     enum fontSize: CGFloat {
-        case small = 10
+        case small = 15
         case med = 20
         case large = 30
     }
