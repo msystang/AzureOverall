@@ -15,6 +15,7 @@ class LogInViewController: UIViewController {
     var titleLabel: UILabel = {
         let label = UILabel()
         label.text = AppTitle.azureOverall.rawValue
+        label.textColor = .white
         label.textAlignment = .center
         label.font = UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.large.rawValue)
         return label

@@ -11,42 +11,40 @@ import UIKit
 extension LogInViewController {
     // MARK: - Public Constraint Methods
     func addSubviews() {
-        view.addSubview(titleLabel)
         view.addSubview(logoImageView)
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(signUpButton)
         view.addSubview(logInButton)
         view.addSubview(buttonStackView)
+        logoImageView.addSubview(titleLabel)
     }
     
     func addConstraints() {
-        setTitleLabelConstraints()
         setLogoImageViewConstraints()
+        setTitleLabelConstraints()
         setTextFieldsConstraints()
         setButtonStackViewConstraints()
     }
     
     // MARK: - Private Constraint Methods
-    private func setTitleLabelConstraints() {
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 30),
-            titleLabel.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            titleLabel.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.7),
-            titleLabel.heightAnchor.constraint(equalToConstant: 30)
-        ])
-    }
-    
     private func setLogoImageViewConstraints() {
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
             logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            logoImageView.topAnchor.constraint(equalToSystemSpacingBelow: titleLabel.bottomAnchor, multiplier: 0.1),
             logoImageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor, constant: -10),
+            logoImageView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.7),
             logoImageView.heightAnchor.constraint(equalTo: logoImageView.widthAnchor)
+        ])
+    }
+    
+    private func setTitleLabelConstraints() {
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            titleLabel.centerXAnchor.constraint(equalTo: logoImageView.centerXAnchor, constant: 0),
+            titleLabel.centerYAnchor.constraint(equalTo: logoImageView.centerYAnchor, constant: 0)
         ])
     }
     
@@ -80,4 +78,5 @@ extension LogInViewController {
             buttonStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
         ])
     }
+    
 }
