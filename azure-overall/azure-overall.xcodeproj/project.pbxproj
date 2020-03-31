@@ -57,6 +57,7 @@
 		EA5D6BC22433B7C600BEB9B2 /* AONavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */; };
 		EA5D6BCA2433C63900BEB9B2 /* AOTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */; };
 		EA5D6BCC2433CB5100BEB9B2 /* AOSubtitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCB2433CB5100BEB9B2 /* AOSubtitleLabel.swift */; };
+		EA5D6BCE2433CEA800BEB9B2 /* AOButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AONavigationController.swift; sourceTree = "<group>"; };
 		EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOTitleLabel.swift; sourceTree = "<group>"; };
 		EA5D6BCB2433CB5100BEB9B2 /* AOSubtitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOSubtitleLabel.swift; sourceTree = "<group>"; };
+		EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AOButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 				EA5D6BC12433B7C600BEB9B2 /* AONavigationController.swift */,
 				EA5D6BC92433C63900BEB9B2 /* AOTitleLabel.swift */,
 				EA5D6BCB2433CB5100BEB9B2 /* AOSubtitleLabel.swift */,
+				EA5D6BCD2433CEA800BEB9B2 /* AOButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				EA5D6B5A242D15CA00BEB9B2 /* CartViewController.swift in Sources */,
 				EA5D6B8C242E6BA100BEB9B2 /* NetworkManager.swift in Sources */,
 				EA5D6BBE24339E5600BEB9B2 /* AOViewController.swift in Sources */,
+				EA5D6BCE2433CEA800BEB9B2 /* AOButton.swift in Sources */,
 				EA5D6BB624329EF200BEB9B2 /* PersistenceManager.swift in Sources */,
 				EA5D6B75242D402000BEB9B2 /* RecipeCollectionViewCell.swift in Sources */,
 				EA5D6B5C242D16DF00BEB9B2 /* DetailViewController.swift in Sources */,
