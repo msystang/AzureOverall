@@ -34,4 +34,5 @@ enum SearchBarTitle: String {
 
 enum NavBarTitle: String {
     case browse = "Browse Recipes"
+    case cart = "My Cart"
 }
