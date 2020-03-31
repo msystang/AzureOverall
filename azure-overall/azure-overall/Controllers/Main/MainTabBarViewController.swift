@@ -22,6 +22,7 @@ class MainTabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         setUpTabBar()
+        styleTabBar()
     }
     
     private func setUpTabBar() {
@@ -30,5 +31,11 @@ class MainTabBarViewController: UITabBarController {
         settingsVC.tabBarItem = UITabBarItem(title: TabBarTitle.settings.rawValue, image: UIImage(systemName:SystemImages.gear.rawValue), tag: 2)
         
         self.viewControllers = [browseVC, cartVC, settingsVC]
+    }
+    
+    private func styleTabBar() {
+        tabBar.barTintColor = AODesign.azure
+        tabBar.tintColor = AODesign.white
+        tabBar.unselectedItemTintColor = AODesign.black
     }
 }
