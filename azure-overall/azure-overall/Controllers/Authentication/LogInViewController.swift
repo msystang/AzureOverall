@@ -28,7 +28,7 @@ class LogInViewController: UIViewController {
     
     lazy var emailTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Email"
+        textField.placeholder = TextFieldTitle.email.rawValue
         textField.borderStyle = .roundedRect
         textField.delegate = self
         return textField
@@ -36,7 +36,7 @@ class LogInViewController: UIViewController {
     
     lazy var passwordTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "Password"
+        textField.placeholder = TextFieldTitle.password.rawValue
         textField.isSecureTextEntry = true
         textField.borderStyle = .roundedRect
         textField.delegate = self
@@ -45,7 +45,7 @@ class LogInViewController: UIViewController {
     
     lazy var signUpButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Sign Me Up!", for: .normal)
+        button.setTitle(ButtonTitle.signUp.rawValue, for: .normal)
         button.showsTouchWhenHighlighted = true
         button.backgroundColor = .red
         button.tag = 0
@@ -55,7 +55,7 @@ class LogInViewController: UIViewController {
     
     lazy var logInButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Login", for: .normal)
+        button.setTitle(ButtonTitle.logIn.rawValue, for: .normal)
         button.showsTouchWhenHighlighted = true
         button.backgroundColor = .red
         button.tag = 1
