@@ -135,7 +135,4 @@ class LogInViewController: UIViewController {
         }, completion: nil)
     }
     
-    // MARK: - Private Methods
-    
-    
 }
