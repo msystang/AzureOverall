@@ -73,13 +73,11 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadQuantity()
-        print(quantityStepper.value)
         
     }
     
     // MARK: - Objc Functions
     @objc private func stepperValueChanged(sender: UIStepper) {
-        print(quantityStepper.value)
         quantityLabel.text = Int(quantityStepper.value).description
     }
     
@@ -91,7 +89,6 @@ class DetailViewController: UIViewController {
         case false:
             do {
                 try RecipePersistenceHelper.manager.saveRecipe(recipe: recipe)
-                print("Updated Cart!")
             } catch {
                 print(error.localizedDescription)
             }
@@ -112,6 +109,23 @@ class DetailViewController: UIViewController {
         self.navigationItem.title = recipe.title
     }
     
+    private func loadImage() {
+        recipeImageView.kf.indicatorType = .activity
+        recipeImageView.kf.setImage(with: URL(string: recipe.imageUrl), placeholder: UIImage(named: AppImages.noPhoto.rawValue))
+    }
+    
+    private func isRecipeInCart(for recipeID: Int) -> Bool {
+        var isInCart = false
+        
+        do {
+            isInCart = try RecipePersistenceHelper.manager.isInCart(recipeID: recipeID)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        return isInCart
+    }
+    
     private func loadQuantity() {
         let recipeID = recipe.id
         
@@ -128,22 +142,6 @@ class DetailViewController: UIViewController {
         }
         quantityStepper.value = Double(recipe.quantity ?? 0)
     }
-    
-    private func isRecipeInCart(for recipeID: Int) -> Bool {
-        var isInCart = false
-        
-        do {
-            isInCart = try RecipePersistenceHelper.manager.isInCart(recipeID: recipeID)
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        return isInCart
-    }
-    
-    private func loadImage() {
-        recipeImageView.kf.indicatorType = .activity
-        recipeImageView.kf.setImage(with: URL(string: recipe.imageUrl), placeholder: UIImage(named: AppImages.noPhoto.rawValue))
-    }
+
     
 }
