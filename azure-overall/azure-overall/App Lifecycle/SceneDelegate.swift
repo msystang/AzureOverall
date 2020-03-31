@@ -24,15 +24,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         // Assigns the rootViewController based on if there is a user
-        if FirebaseAuthService.manager.currentUser != nil {
+//        if FirebaseAuthService.manager.currentUser != nil {
             window?.rootViewController = {
                 let browseVC = MainTabBarViewController()
                 browseVC.selectedIndex = 0
                 return browseVC
             }()
-        } else {
-            window?.rootViewController = LogInViewController()
-        }
+//        } else {
+//            window?.rootViewController = LogInViewController()
+//        }
+        
+//        window?.rootViewController = LogInViewController()
         
         // Shows the current window
         window?.makeKeyAndVisible()

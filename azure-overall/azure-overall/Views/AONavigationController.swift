@@ -21,7 +21,7 @@ class AONavigationController: UINavigationController {
         navigationBar.barTintColor = AODesign.azure
         let textAttributes = [
             NSAttributedString.Key.foregroundColor : AODesign.white,
-            NSAttributedString.Key.font : UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.med.rawValue)!] as [NSAttributedString.Key : Any]
+            NSAttributedString.Key.font : UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.large.rawValue)!] as [NSAttributedString.Key : Any]
         navigationBar.titleTextAttributes = textAttributes
     }
 }
