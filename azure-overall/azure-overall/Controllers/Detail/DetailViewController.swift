@@ -25,14 +25,15 @@ class DetailViewController: AOViewController {
         return imageView
     }()
     
-    lazy var quantityTitleLabel: UILabel = {
-        let label = UILabel()
+    lazy var quantityTitleLabel: AOTitleLabel = {
+        let label = AOTitleLabel()
         label.text = LabelTitles.quantity.rawValue
         return label
     }()
     
-    lazy var quantityLabel: UILabel = {
-        let label = UILabel()
+    lazy var quantityLabel: AOSubtitleLabel = {
+        let label = AOSubtitleLabel()
+        label.font = UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.large.rawValue)
         return label
     }()
     
