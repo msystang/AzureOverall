@@ -238,8 +238,8 @@
 			children = (
 				EA5D6B31242CF6C200BEB9B2 /* BrowseViewController.swift */,
 				EA5D6B6A242D301E00BEB9B2 /* BrowseViewController+SearchBar.swift */,
-				EA5D6B6C242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift */,
 				EA5D6B6E242D367D00BEB9B2 /* BrowseViewController+Constraints.swift */,
+				EA5D6B6C242D340E00BEB9B2 /* BrowseViewController+CollectionView.swift */,
 			);
 			path = Browse;
 			sourceTree = "<group>";

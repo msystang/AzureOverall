@@ -13,18 +13,13 @@ class BrowseViewController: AOViewController {
     // MARK: - UI Objects
     lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
-        searchBar.searchBarStyle = .minimal
-        searchBar.delegate = self
-        searchBar.placeholder = SearchBarTitle.placeholder.rawValue
+        setUpSearchBar(searchBar: searchBar)
         return searchBar
     }()
     
     lazy var recipeCollectionView: UICollectionView = {
         let collectionView: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.register(RecipeCollectionViewCell.self, forCellWithReuseIdentifier: CellIdentifiers.recipeCollectionViewCell.rawValue)
-        collectionView.backgroundColor = .orange
+        setUpCollectionView(collectionView: collectionView)
         return collectionView
     }()
     
@@ -53,7 +48,6 @@ class BrowseViewController: AOViewController {
         addConstraints()
         
         setTitle()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,5 +77,25 @@ class BrowseViewController: AOViewController {
             }
         }
     }
+    
+    private func setUpSearchBar(searchBar: UISearchBar) {
+        searchBar.delegate = self
+        
+        searchBar.searchBarStyle = .minimal
+        searchBar.placeholder = SearchBarTitle.placeholder.rawValue
+        
+        searchBar.searchTextField.font = UIFont(name: AODesign.fontName.light.rawValue, size: AODesign.fontSize.small.rawValue)
+        searchBar.searchTextField.textColor = AODesign.black
+        searchBar.tintColor = AODesign.azure
+    }
+    
+    private func setUpCollectionView(collectionView: UICollectionView) {
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(RecipeCollectionViewCell.self, forCellWithReuseIdentifier: CellIdentifiers.recipeCollectionViewCell.rawValue)
+        
+        collectionView.backgroundColor = .clear
+    }
+
 }
 
