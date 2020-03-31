@@ -19,17 +19,9 @@ class RecipeTableViewCell: UITableViewCell {
         return imageView
     }()
     
-    var recipeTitleLabel: AOTitleLabel = {
-        let label = AOTitleLabel()
-        label.textAlignment = .left
-        return label
-    }()
+    var recipeTitleLabel = AOTitleLabel()
     
-    var quantityLabel: AOSubtitleLabel = {
-        let label = AOSubtitleLabel()
-        label.textAlignment = .left
-        return label
-    }()
+    var quantityLabel = AOSubtitleLabel()
     
     // MARK: - Initializers
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

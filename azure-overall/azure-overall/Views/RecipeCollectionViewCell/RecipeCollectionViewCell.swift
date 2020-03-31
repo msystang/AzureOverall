@@ -19,9 +19,17 @@ class RecipeCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    var recipeTitleLabel = AOTitleLabel()
+    var recipeTitleLabel: AOTitleLabel = {
+        let label = AOTitleLabel()
+        label.textAlignment = .center
+        return label
+    }()
     
-    var recipeInfoLabel = AOSubtitleLabel()
+    var recipeInfoLabel: AOSubtitleLabel = {
+        let label = AOSubtitleLabel()
+        label.textAlignment = .center
+        return label
+    }()
     
     
     // MARK: - Initializers

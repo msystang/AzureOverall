@@ -14,7 +14,7 @@ class AOSubtitleLabel: UILabel {
         super.init(frame: frame)
         
         self.font = UIFont(name: AODesign.fontName.regular.rawValue, size: AODesign.fontSize.small.rawValue)
-        self.textAlignment = .center
+        self.textAlignment = .left
         self.numberOfLines = 0
         self.adjustsFontSizeToFitWidth = true
         self.textColor = AODesign.azure

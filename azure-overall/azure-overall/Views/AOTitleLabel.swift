@@ -14,7 +14,7 @@ class AOTitleLabel: UILabel {
         super.init(frame: frame)
         
         self.font = UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.med.rawValue)
-        self.textAlignment = .center
+        self.textAlignment = .left
         self.numberOfLines = 0
         self.adjustsFontSizeToFitWidth = true
         self.textColor = AODesign.gray
