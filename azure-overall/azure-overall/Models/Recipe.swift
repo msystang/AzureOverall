@@ -16,7 +16,7 @@ struct Recipe: Codable {
     let readyInMinutes: Int
     let servings: Int
         
-    var quantity: Int? = 0
+    var quantity: Int?
     var imageUrl: String {
         return "https://spoonacular.com/recipeImages/\(image)"
     }

@@ -67,9 +67,13 @@ class DetailViewController: UIViewController {
         addConstraints()
         
         setTitle()
-        
-        loadQuantityLabel()
         loadImage()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadQuantityLabel()
+        
     }
     
     // MARK: - Objc Functions
@@ -79,8 +83,6 @@ class DetailViewController: UIViewController {
     
     @objc private func updateCartButtonPressed() {
         recipe.quantity = Int(quantityStepper.value)
-        
-        print(recipe.quantity)
         
         do {
             try RecipePersistenceHelper.manager.saveRecipe(recipe: recipe)
@@ -99,12 +101,34 @@ class DetailViewController: UIViewController {
     }
     
     private func loadQuantityLabel() {
-        quantityLabel.text = "0"
+//        quantityLabel.text = "\(recipe.quantity ?? 0)"
+        let recipeID = recipe.id
+        var isInCart = false
+        
+        do {
+            isInCart = try RecipePersistenceHelper.manager.isInCart(recipeID: recipeID)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        switch isInCart {
+        case false:
+            quantityLabel.text = "0"
+        case true:
+            do {
+                recipe = try RecipePersistenceHelper.manager.getRecipe(with: recipeID)
+                quantityLabel.text = "\(Int(recipe.quantity ?? 0))"
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        }
+        
     }
     
     private func loadImage() {
         recipeImageView.kf.indicatorType = .activity
         recipeImageView.kf.setImage(with: URL(string: recipe.imageUrl), placeholder: UIImage(named: AppImages.noPhoto.rawValue))
     }
-
+    
 }
