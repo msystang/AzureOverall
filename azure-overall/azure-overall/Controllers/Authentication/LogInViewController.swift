@@ -84,17 +84,17 @@ class LogInViewController: UIViewController {
         
         //Todo: Create validateTextFields func for both buttons
         guard let email = emailTextField.text, let password = passwordTextField.text else {
-            showAlert(title: "Error", message: "Please fill out all fields.")
+            okAlert(title: "Error", message: "Please fill out all fields.")
             return
         }
         
         guard email.isValidEmail else {
-            showAlert(title: "Error", message: "Please enter a valid email")
+            okAlert(title: "Error", message: "Please enter a valid email")
             return
         }
         
         guard password.isValidPassword else {
-            showAlert(title: "Error", message: "Please enter a valid password. Passwords must have at least 8 characters.")
+            okAlert(title: "Error", message: "Please enter a valid password. Passwords must have at least 8 characters.")
             return
         }
         
@@ -104,7 +104,7 @@ class LogInViewController: UIViewController {
         case 1:
             attemptLogIn(email: email, password: password)
         default:
-            showAlert(title: "Oops!", message: "This button shouldn't exist.")
+            okAlert(title: "Oops!", message: "This button shouldn't exist.")
         }
     }
     

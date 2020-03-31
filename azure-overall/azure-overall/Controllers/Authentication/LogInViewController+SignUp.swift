@@ -22,7 +22,7 @@ extension LogInViewController {
     private func handleSignUpResponse(with result: Result<User,Error>) {
         switch result {
         case .failure(let error):
-            showAlert(title: "Error", message: "Could not sign up: \(error.localizedDescription)")
+            okAlert(title: "Error", message: "Could not sign up: \(error.localizedDescription)")
         case .success(let newUser):
             let newAppUser = AppUser(from: newUser)
             
@@ -37,7 +37,7 @@ extension LogInViewController {
         case .success:
             transitionToMainTabBarVC()
         case .failure(let error):
-            self.showAlert(title: "Error creating user", message: "An error occured while creating new account \(error)")
+            self.okAlert(title: "Error creating user", message: "An error occured while creating new account \(error)")
             enableButtons()
         }
     }

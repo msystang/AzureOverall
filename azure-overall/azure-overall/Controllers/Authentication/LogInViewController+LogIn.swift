@@ -23,7 +23,7 @@ extension LogInViewController {
         case .success:
             transitionToMainTabBarVC()
         case .failure(let error):
-            showAlert(title: "Error", message: "Could not log in: \(error.localizedDescription)")
+            okAlert(title: "Error", message: "Could not log in: \(error.localizedDescription)")
             enableButtons()
         }
     }

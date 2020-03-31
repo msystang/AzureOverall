@@ -11,8 +11,15 @@ import UIKit
 // MARK: - ViewController Extensions
 extension UIViewController {
     
-    // MARK: showAlert
-    func showAlert(title: String?, message: String?) {
+    // MARK: flashAlert
+    func flashAert(title: String?, message: String?, completion: (() -> ())? ) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        present(alertController, animated: true, completion: nil)
+        dismiss(animated: true, completion: completion)
+    }
+    
+    // MARK: okAlert
+    func okAlert(title: String?, message: String?) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title:"OK", style: .default) { alert in }
         alertController.addAction(action)
