@@ -54,11 +54,9 @@ class DetailViewController: AOViewController {
         return stackView
     }()
     
-    lazy var updateCartButton: UIButton = {
-        let button = UIButton()
+    lazy var updateCartButton: AOButton = {
+        let button = AOButton()
         button.setTitle(ButtonTitle.updateCart.rawValue, for: .normal)
-        button.showsTouchWhenHighlighted = true
-        button.backgroundColor = .red
         button.addTarget(self, action: #selector(updateCartButtonPressed), for: .touchUpInside)
         return button
     }()
@@ -118,7 +116,7 @@ class DetailViewController: AOViewController {
         label.text = recipe.title
         label.textColor = AODesign.white
         label.textAlignment = .center
-        label.font = UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.med.rawValue)
+        label.font = UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.large.rawValue)
         label.adjustsFontSizeToFitWidth = true
     }
     

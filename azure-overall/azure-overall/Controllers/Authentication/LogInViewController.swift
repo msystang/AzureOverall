@@ -44,21 +44,17 @@ class LogInViewController: UIViewController {
         return textField
     }()
     
-    lazy var signUpButton: UIButton = {
-        let button = UIButton()
+    lazy var signUpButton: AOButton = {
+        let button = AOButton()
         button.setTitle(ButtonTitle.signUp.rawValue, for: .normal)
-        button.showsTouchWhenHighlighted = true
-        button.backgroundColor = .red
         button.tag = 0
         button.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
         return button
     }()
     
-    lazy var logInButton: UIButton = {
-        let button = UIButton()
+    lazy var logInButton: AOButton = {
+        let button = AOButton()
         button.setTitle(ButtonTitle.logIn.rawValue, for: .normal)
-        button.showsTouchWhenHighlighted = true
-        button.backgroundColor = .red
         button.tag = 1
         button.addTarget(self, action: #selector(buttonPressed(sender:)), for: .touchUpInside)
         return button
