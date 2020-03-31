@@ -10,6 +10,11 @@ import Foundation
 import FirebaseFirestore
 import FirebaseAuth
 
+fileprivate enum FieldsDictKey: String {
+    case email
+    case dateCreated
+}
+
 struct AppUser {
     // MARK: Properties
     let email: String?
