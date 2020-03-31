@@ -28,6 +28,8 @@ enum ButtonTitle: String {
     case logIn = "Let's Eat"
     
     case updateCart = "Update Cart"
+    
+    case logOut = "Log Out"
 }
 
 enum SearchBarTitle: String {
