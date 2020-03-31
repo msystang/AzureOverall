@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BrowseViewController: UIViewController {
+class BrowseViewController: AOViewController {
     
     // MARK: - UI Objects
     lazy var searchBar: UISearchBar = {
@@ -48,7 +48,6 @@ class BrowseViewController: UIViewController {
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
         
         addSubviews()
         addConstraints()

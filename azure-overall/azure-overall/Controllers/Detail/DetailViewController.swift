@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: AOViewController {
     // MARK: - UI Objects
     
     //TODO: Create titleLabel and add to nav bar title view
@@ -63,7 +63,6 @@ class DetailViewController: UIViewController {
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
         
         addSubviews()
         addConstraints()

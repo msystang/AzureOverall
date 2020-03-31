@@ -9,13 +9,14 @@
 import UIKit
 import FirebaseAuth
 
-class LogInViewController: UIViewController {
+class LogInViewController: AOViewController {
     
     // MARK: - UI Objects
     var titleLabel: UILabel = {
         let label = UILabel()
         label.text = AppTitle.azureOverall.rawValue
         label.textAlignment = .center
+        label.font = UIFont(name: AODesign.fontName.bold.rawValue, size: AODesign.fontSize.large.rawValue)
         return label
     }()
     
