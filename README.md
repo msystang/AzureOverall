@@ -32,4 +32,6 @@ This project is a 2-day take home coding challenge from Pursuit.org.
 - Source control
 
 ## UI
+<img src="./gifs/azure-overall-gif-1.gif" width="300">
+<img src="./gifs/azure-overall-gif-2.gif" width="300">
 
