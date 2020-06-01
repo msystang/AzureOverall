@@ -1,0 +1,72 @@
+//
+//  SceneDelegate.swift
+//  azure-overall
+//
+//  Created by Sunni Tang on 3/26/20.
+//  Copyright © 2020 Sunni Tang. All rights reserved.
+//
+
+import UIKit
+
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
+        // Sets variable for instance of app's scene as UIWindowScene
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        // Sets app's window to the bounds of the device screen
+        window = UIWindow(frame: UIScreen.main.bounds)
+        // Assigns the app's windowScene to the window on the device
+        window?.windowScene = windowScene
+        
+        // Assigns the rootViewController based on if there is a user
+        if FirebaseAuthService.manager.currentUser != nil {
+            window?.rootViewController = {
+                let browseVC = MainTabBarViewController()
+                browseVC.selectedIndex = 0
+                return browseVC
+            }()
+        } else {
+            window?.rootViewController = LogInViewController()
+        }
+        
+        // Shows the current window
+        window?.makeKeyAndVisible()
+
+    }
+
+    func sceneDidDisconnect(_ scene: UIScene) {
+        // Called as the scene is being released by the system.
+        // This occurs shortly after the scene enters the background, or when its session is discarded.
+        // Release any resources associated with this scene that can be re-created the next time the scene connects.
+        // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
+    }
+
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        // Called when the scene has moved from an inactive state to an active state.
+        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+    }
+
+    func sceneWillResignActive(_ scene: UIScene) {
+        // Called when the scene will move from an active state to an inactive state.
+        // This may occur due to temporary interruptions (ex. an incoming phone call).
+    }
+
+    func sceneWillEnterForeground(_ scene: UIScene) {
+        // Called as the scene transitions from the background to the foreground.
+        // Use this method to undo the changes made on entering the background.
+    }
+
+    func sceneDidEnterBackground(_ scene: UIScene) {
+        // Called as the scene transitions from the foreground to the background.
+        // Use this method to save data, release shared resources, and store enough scene-specific state information
+        // to restore the scene back to its current state.
+    }
+
+
+}
+

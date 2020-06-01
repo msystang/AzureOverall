@@ -1,0 +1,10 @@
+Secrets.swift
+
+Pods
+
+xcuserdata
+*.xcworkspace
+*.xcuserdata
+*.xcuserstate
+
+.DS_Store
